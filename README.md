@@ -1,2 +1,3 @@
-# aseprite-themes
-Aseprite Themes
+# Aseprite Themes
+
+Repository of [Aseprite](https://aseprite.org) themes.

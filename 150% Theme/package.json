@@ -1,0 +1,41 @@
+{
+  "name": "aseprite-150-theme",
+  "displayName": "Aseprite Default Theme (150%)",
+  "description": "Default Aseprite Pixel-Art Theme (150%)",
+  "version": "1.0",
+  "author": {
+    "name": "Kacper Woźniak",
+    "email": "kac.wozniak@gmail.com",
+    "url": "https://thkaspar.itch.io/"
+  },
+  "contributors": [
+    {
+      "name": "David Capello",
+      "email": "davidcapello@gmail.com",
+      "url": "http://davidcapello.com/"
+    },
+    {
+      "name": "Ilija Melentijevic",
+      "url": "http://ilkke.blogspot.com/"
+    }
+  ],
+  "publisher": "Kacper Woźniak",
+  "license": "CC-BY-4.0",
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "id": "default-150",
+        "path": "./default-150",
+        "variant": "Light"
+      },
+      {
+        "id": "default-150-dark",
+        "path": "./default-150-dark",
+        "variant": "Dark"
+      }
+    ]
+  }
+}
