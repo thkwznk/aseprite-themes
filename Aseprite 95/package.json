@@ -1,0 +1,25 @@
+{
+  "name": "aseprite-95-theme",
+  "displayName": "Aseprite 95 Theme",
+  "description": "",
+  "version": "1.0",
+  "author": {
+    "name": "Kacper Woźniak",
+    "email": "kac.wozniak@gmail.com",
+    "url": "https://thkaspar.itch.io/"
+  },
+  "contributors": [],
+  "publisher": "aseprite",
+  "license": "CC-BY-4.0",
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "id": "Aseprite 95",
+        "path": "."
+      }
+    ]
+  }
+}
