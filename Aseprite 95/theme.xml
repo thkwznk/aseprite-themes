@@ -55,7 +55,7 @@
         <color id="menuitem_normal_text" value="#000000" />
         <color id="menuitem_normal_face" value="#c0c0c0" />
         <color id="menuitem_hot_text" value="#000000" />
-        <color id="menuitem_hot_face" value="#ffff7d" />
+        <color id="menuitem_hot_face" value="#ffffff" />
         <color id="menuitem_highlight_text" value="#ffffff" />
         <color id="menuitem_highlight_face" value="#0000a8" />
         <color id="window_face" value="#c0c0c0" />
@@ -67,6 +67,7 @@
         <color id="editor_view_face" value="#808080" />
         <color id="listitem_normal_text" value="#000000" />
         <color id="listitem_normal_face" value="#ffffff" />
+        <color id="listitem_hot_face" value="#c0c0c0" />
         <color id="listitem_selected_text" value="#ffffff" />
         <color id="listitem_selected_face" value="#0000a8" />
         <color id="slider_empty_text" value="#000000" />
@@ -673,7 +674,7 @@
         <style id="recent_item" />
         <style id="recent_file" border="2">
             <background color="background" />
-            <background color="menuitem_hot_face" state="mouse" />
+            <background color="listitem_hot_face" state="mouse" />
             <background color="listitem_selected_face" state="selected" />
             <text color="text" align="left" x="2" />
             <text color="listitem_selected_text" align="left" x="2" state="selected" />
@@ -683,7 +684,7 @@
         </style>
         <style id="recent_file_pin">
             <background color="background" />
-            <background color="menuitem_hot_face" state="mouse" />
+            <background color="listitem_hot_face" state="mouse" />
             <background color="listitem_selected_face" state="selected" />
             <icon part="unpinned" align="center middle" color="text" />
             <icon part="unpinned" align="center middle" color="listitem_selected_text" state="selected" />
@@ -692,7 +693,7 @@
         </style>
         <style id="news_item" border="2">
             <background color="background" />
-            <background color="menuitem_hot_face" state="mouse" />
+            <background color="listitem_hot_face" state="mouse" />
             <background color="listitem_selected_face" state="selected" />
             <text color="text" align="left" x="2" />
             <text color="listitem_selected_text" align="left" x="2" state="selected" />
