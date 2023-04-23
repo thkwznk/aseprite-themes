@@ -32,30 +32,30 @@
     </dimensions>
     <colors>
         <color id="text" value="#000000" />
-        <color id="disabled" value="#968275" />
-        <color id="face" value="#d3cbbe" />
+        <color id="disabled" value="#808080" />
+        <color id="face" value="#c0c0c0" />
         <color id="hot_face" value="#faf0e6" />
         <color id="selected" value="#ff5555" />
         <color id="selected_text" value="#ffffff" />
-        <color id="separator_label" value="#2c4c91" />
+        <color id="separator_label" value="#808080" />
         <color id="background" value="#ffffff" />
         <color id="textbox_text" value="#000000" />
         <color id="textbox_face" value="#ffffff" />
         <color id="textbox_code_face" value="#eeeeee" />
-        <color id="entry_suffix" value="#c6c6c6" />
-        <color id="link_text" value="#2c4c91" />
+        <color id="entry_suffix" value="#c0c0c0" />
+        <color id="link_text" value="#0000a8" />
         <color id="link_hover" value="#ff5555" />
         <color id="button_normal_text" value="#000000" />
         <color id="button_hot_text" value="#000000" />
         <color id="button_selected_text" value="#ffffff" />
-        <color id="check_hot_face" value="#ffebb6" />
-        <color id="check_focus_face" value="#c6c6c6" />
+        <color id="check_hot_face" value="#ffffff" />
+        <color id="check_focus_face" value="#c0c0c0" />
         <color id="radio_hot_face" value="#ffebb6" />
-        <color id="radio_focus_face" value="#c6c6c6" />
+        <color id="radio_focus_face" value="#c0c0c0" />
         <color id="menuitem_normal_text" value="#000000" />
         <color id="menuitem_normal_face" value="#c0c0c0" />
         <color id="menuitem_hot_text" value="#000000" />
-        <color id="menuitem_hot_face" value="#ffebb6" />
+        <color id="menuitem_hot_face" value="#ffff7d" />
         <color id="menuitem_highlight_text" value="#ffffff" />
         <color id="menuitem_highlight_face" value="#0000a8" />
         <color id="window_face" value="#c0c0c0" />
@@ -68,7 +68,7 @@
         <color id="listitem_normal_text" value="#000000" />
         <color id="listitem_normal_face" value="#ffffff" />
         <color id="listitem_selected_text" value="#ffffff" />
-        <color id="listitem_selected_face" value="#ff5555" />
+        <color id="listitem_selected_face" value="#0000a8" />
         <color id="slider_empty_text" value="#000000" />
         <color id="slider_full_text" value="#ffffff" />
         <color id="tab_normal_text" value="#000000" />
@@ -82,7 +82,7 @@
         <color id="filelist_odd_row_text" value="#000000" />
         <color id="filelist_odd_row_face" value="#ffffff" />
         <color id="filelist_selected_row_text" value="#ffffff" />
-        <color id="filelist_selected_row_face" value="#ff5555" />
+        <color id="filelist_selected_row_face" value="#0000a8" />
         <color id="filelist_disabled_row_text" value="#ffc8c8" />
         <color id="workspace" value="#c0c0c0" />
         <color id="workspace_text" value="#000000" />
@@ -291,16 +291,16 @@
         <part id="timeline_closed_group_active" x="288" y="60" w="12" h="12" />
         <part id="timeline_open_group_normal" x="276" y="72" w="12" h="12" />
         <part id="timeline_open_group_active" x="288" y="72" w="12" h="12" />
-        <part id="timeline_empty_frame_normal" x="240" y="60" w1="5" w2="3" w3="4" h1="5" h2="3" h3="4" />
-        <part id="timeline_empty_frame_active" x="252" y="60" w1="5" w2="3" w3="4" h1="5" h2="3" h3="4" />
-        <part id="timeline_keyframe_normal" x="240" y="72" w1="5" w2="3" w3="4" h1="5" h2="3" h3="4" />
-        <part id="timeline_keyframe_active" x="252" y="72" w1="5" w2="3" w3="4" h1="5" h2="3" h3="4" />
-        <part id="timeline_from_left_normal" x="240" y="84" w1="0" w2="8" w3="4" h1="5" h2="3" h3="4" />
-        <part id="timeline_from_left_active" x="252" y="84" w1="0" w2="8" w3="4" h1="5" h2="3" h3="4" />
-        <part id="timeline_from_right_normal" x="240" y="96" w1="5" w2="7" w3="0" h1="5" h2="3" h3="4" />
-        <part id="timeline_from_right_active" x="252" y="96" w1="5" w2="7" w3="0" h1="5" h2="3" h3="4" />
-        <part id="timeline_from_both_normal" x="240" y="108" w1="0" w2="12" w3="0" h1="5" h2="3" h3="4" />
-        <part id="timeline_from_both_active" x="252" y="108" w1="0" w2="12" w3="0" h1="5" h2="3" h3="4" />
+        <part id="timeline_empty_frame_normal" x="240" y="60" w1="5" w2="2" w3="5" h1="5" h2="2" h3="5" />
+        <part id="timeline_empty_frame_active" x="252" y="60" w1="5" w2="2" w3="5" h1="5" h2="2" h3="5" />
+        <part id="timeline_keyframe_normal" x="240" y="72" w1="5" w2="2" w3="5" h1="5" h2="2" h3="5" />
+        <part id="timeline_keyframe_active" x="252" y="72" w1="5" w2="2" w3="5" h1="5" h2="2" h3="5" />
+        <part id="timeline_from_left_normal" x="240" y="84" w1="0" w2="8" w3="4" h1="5" h2="2" h3="5" />
+        <part id="timeline_from_left_active" x="252" y="84" w1="0" w2="8" w3="4" h1="5" h2="2" h3="5" />
+        <part id="timeline_from_right_normal" x="240" y="96" w1="5" w2="7" w3="0" h1="5" h2="2" h3="5" />
+        <part id="timeline_from_right_active" x="252" y="96" w1="5" w2="7" w3="0" h1="5" h2="2" h3="5" />
+        <part id="timeline_from_both_normal" x="240" y="108" w1="0" w2="12" w3="0" h1="5" h2="2" h3="5" />
+        <part id="timeline_from_both_active" x="252" y="108" w1="0" w2="12" w3="0" h1="5" h2="2" h3="5" />
         <part id="timeline_left_link_active" x="264" y="84" w1="3" w2="9" w3="0" h1="4" h2="1" h3="7" />
         <part id="timeline_both_links_active" x="264" y="96" w1="0" w2="12" w3="0" h1="4" h2="1" h3="7" />
         <part id="timeline_right_link_active" x="264" y="108" w1="0" w2="9" w3="3" h1="4" h2="1" h3="7" />
@@ -308,7 +308,7 @@
         <part id="timeline_gear_active" x="264" y="24" w="12" h="12" />
         <part id="timeline_onionskin" x="264" y="36" w="12" h="12" />
         <part id="timeline_onionskin_active" x="264" y="48" w="12" h="12" />
-        <part id="timeline_onionskin_range" x="240" y="120" w1="3" w2="6" w3="3" h1="3" h2="6" h3="3" />
+        <part id="timeline_onionskin_range" x="240" y="120" w1="4" w2="4" w3="4" h1="4" h2="4" h3="4" />
         <part id="timeline_padding" x="276" y="12" w1="1" w2="10" w3="1" h1="1" h2="10" h3="1" />
         <part id="timeline_padding_tr" x="288" y="12" w1="1" w2="10" w3="1" h1="1" h2="10" h3="1" />
         <part id="timeline_padding_bl" x="276" y="24" w1="1" w2="10" w3="1" h1="1" h2="10" h3="1" />
@@ -423,6 +423,7 @@
         <part id="outline_empty_pixel" x="208" y="224" w="5" h="5" />
         <part id="outline_full_pixel" x="214" y="224" w="5" h="5" />
         <part id="dynamics" x="176" y="144" w="16" h="16" />
+        <part id="check_hot" x="32" y="52" w1="2" w2="6" w3="2" h1="2" h2="6" h3="2" />
     </parts>
     <styles>
         <style id="box" />
@@ -563,11 +564,11 @@
             <text color="disabled" state="disabled" />
         </style>
         <style id="check_box" border="2">
-            <background color="check_hot_face" state="mouse focus" />
             <background color="check_focus_face" state="focus" />
-            <background color="check_hot_face" state="mouse" />
             <newlayer />
             <background part="check_focus" state="focus" />
+            <background part="check_hot" state="mouse focus" />
+            <background part="check_hot" state="mouse" />
             <text color="text" align="left middle" x="14" />
             <text color="disabled" align="left middle" x="14" state="disabled" />
             <icon part="check_normal" align="left middle" x="2" />
@@ -576,11 +577,13 @@
             <icon part="check_selected" align="left middle" x="2" state="disabled selected" />
         </style>
         <style id="radio_button" border="2">
-            <background color="radio_hot_face" state="mouse focus" />
+            <!-- <background color="radio_hot_face" state="mouse focus" /> -->
             <background color="radio_focus_face" state="focus" />
-            <background color="radio_hot_face" state="mouse" />
+            <!-- <background color="radio_hot_face" state="mouse" /> -->
             <newlayer />
             <background part="radio_focus" state="focus" />
+            <background part="check_hot" state="mouse focus" />
+            <background part="check_hot" state="mouse" />
             <text color="text" align="left middle" x="14" />
             <text color="disabled" align="left middle" x="14" state="disabled" />
             <icon part="radio_normal" align="left middle" x="2" />
