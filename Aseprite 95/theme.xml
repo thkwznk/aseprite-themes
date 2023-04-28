@@ -558,8 +558,8 @@
             <background-border part="button_selected" state="selected" />
             <background-border part="button_normal" state="mouse disabled" />
             <text color="button_normal_text" />
-            <text color="button_hot_text" state="mouse" />
-            <text color="button_selected_text" state="selected" />
+            <text color="button_hot_text" y="1" state="mouse" />
+            <text color="button_selected_text" y="1" state="selected" />
             <text color="background" x="1" y="1" state="disabled" />
             <newlayer />
             <text color="disabled" state="disabled" />
@@ -597,8 +597,8 @@
             <background-border part="buttonset_item_hot" state="focus" />
             <background-border part="buttonset_item_pushed" state="selected" />
             <text color="button_normal_text" />
-            <text color="button_hot_text" state="mouse" />
-            <text color="button_selected_text" state="selected" />
+            <text color="button_hot_text" y="1" state="mouse" />
+            <text color="button_selected_text" y="1" state="selected" />
         </style>
         <style id="mini_check_box" extends="check_box" font="mini" />
         <style id="combobox_button" extends="mini_button">
@@ -757,14 +757,16 @@
             <background part="tab_icon_bg_clicked" state="selected" />
         </style>
         <style id="tab_close_icon" extends="tab_icon">
-            <icon part="tab_close_icon_normal" align="left middle" x="3" />
+            <icon part="tab_close_icon_normal" align="left middle" x="3" y="1" />
             <icon part="tab_close_icon_active" align="left middle" x="3" state="focus" />
             <icon part="tab_close_icon_normal" align="left middle" x="3" state="selected" />
+            <icon part="tab_close_icon_active" align="left middle" x="3" state="mouse" />
         </style>
         <style id="tab_modified_icon" extends="tab_icon">
-            <icon part="tab_modified_icon_normal" align="left middle" x="3" />
+            <icon part="tab_modified_icon_normal" align="left middle" x="3" y="1" />
             <icon part="tab_modified_icon_active" align="left middle" x="3" state="focus" />
             <icon part="tab_modified_icon_normal" align="left middle" x="3" state="selected" />
+            <icon part="tab_modified_icon_active" align="left middle" x="3" state="mouse" />
         </style>
         <style id="tab_home">
             <icon part="tab_home_icon_normal" align="left middle" x="4" y="1" />
@@ -938,7 +940,7 @@
             <background color="none" />
             <newlayer />
             <icon part="window_center_icon" color="button_normal_text" />
-            <icon part="window_center_icon" color="button_hot_text" state="mouse" />
+            <icon part="window_center_icon" color="button_hot_text" y="1" state="mouse" />
             <icon part="window_center_icon" color="button_selected_text" state="selected" />
         </style>
         <style id="shade_selection">
@@ -971,7 +973,7 @@
         <style id="slider" border-top="4" border-bottom="5">
             <background part="slider_empty" />
             <background part="slider_empty_focused" state="focus" />
-            <text color="slider_empty_text" align="center middle" />
+            <text color="slider_empty_text" align="center middle" y="1" />
             <text color="slider_empty_text" align="center middle" state="focus" y="1" />
         </style>
         <style id="mini_slider" extends="slider" font="mini" padding-top="1" padding-bottom="3">
