@@ -77,7 +77,7 @@
         <color id="tab_active_face" value="#c0c0c0" />
         <color id="popup_window_border" value="#000000" />
         <color id="tooltip_text" value="#000000" />
-        <color id="tooltip_face" value="#ffff7d" />
+        <color id="tooltip_face" value="#ffffbf" />
         <color id="filelist_even_row_text" value="#000000" />
         <color id="filelist_even_row_face" value="#ffffff" />
         <color id="filelist_odd_row_text" value="#000000" />
@@ -110,7 +110,7 @@
         <color id="flag_clicked" value="#7d929e" />
         <color id="select_box_ruler" value="#0000ff" />
         <color id="select_box_grid" value="#64c864" />
-        <color id="edit_pal_face" value="#655561" />
+        <color id="edit_pal_face" value="#c0c0c0" />
         <color id="palette_entries_separator" value="#000000" />
     </colors>
     <parts>
@@ -200,11 +200,11 @@
         <part id="big_icon_view" x="114" y="224" w="9" h="9" />
         <part id="toolbutton_normal" x="96" y="0" w1="2" w2="11" w3="3" h1="2" h2="10" h3="4" />
         <part id="toolbutton_hot" x="112" y="32" w1="3" w2="10" w3="3" h1="3" h2="9" h3="4" />
-        <part id="toolbutton_last" x="112" y="48" w1="3" w2="10" w3="3" h1="3" h2="9" h3="4" />
+        <part id="toolbutton_last" x="112" y="48" w1="2" w2="11" w3="3" h1="2" h2="10" h3="4" />
         <part id="toolbutton_pushed" x="128" y="32" w1="3" w2="10" w3="3" h1="3" h2="9" h3="4" />
-        <part id="buttonset_item_normal" x="96" y="16" w1="2" w2="11" w3="3" h1="2" h2="10" h3="4" />
+        <part id="buttonset_item_normal" x="96" y="16" w1="2" w2="11" w3="3" h1="2" h2="11" h3="3" />
         <part id="buttonset_item_hot_focused" x="128" y="0" w1="3" w2="10" w3="3" h1="3" h2="9" h3="4" />
-        <part id="buttonset_item_pushed" x="112" y="16" w1="3" w2="10" w3="3" h1="3" h2="9" h3="4" />
+        <part id="buttonset_item_pushed" x="112" y="16" w1="3" w2="10" w3="3" h1="3" h2="10" h3="3" />
         <part id="tab_normal" x="2" y="112" w1="4" w2="5" w3="5" h1="4" h2="6" h3="2" />
         <part id="tab_active" x="16" y="112" w1="4" w2="7" w3="5" h1="4" h2="6" h3="2" />
         <part id="tab_bottom_active" x="16" y="124" w1="4" w2="7" w3="5" h1="2" h2="1" h3="2" />
