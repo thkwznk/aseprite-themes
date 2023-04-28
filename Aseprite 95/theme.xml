@@ -61,9 +61,9 @@
         <color id="window_face" value="#c0c0c0" />
         <color id="window_titlebar_text" value="#ffffff" />
         <color id="window_titlebar_face" value="#0000a8" />
-        <color id="editor_face" value="#808080" />
+        <color id="editor_face" value="#008080" />
         <color id="editor_sprite_border" value="#000000" />
-        <color id="editor_sprite_bottom_border" value="#41412c" />
+        <color id="editor_sprite_bottom_border" value="#004040" />
         <color id="editor_view_face" value="#808080" />
         <color id="listitem_normal_text" value="#000000" />
         <color id="listitem_normal_face" value="#ffffff" />
@@ -324,7 +324,7 @@
         <part id="drop_pixels_ok_selected" x="176" y="184" w="7" h="8" />
         <part id="drop_pixels_cancel" x="192" y="176" w="7" h="8" />
         <part id="drop_pixels_cancel_selected" x="192" y="184" w="7" h="8" />
-        <part id="warning_box" x="112" y="81" w="10" h="10" />
+        <part id="warning_box" x="112" y="81" w="7" h="7" />
         <part id="canvas_nw" x="96" y="96" w="16" h="16" />
         <part id="canvas_n" x="112" y="96" w="16" h="16" />
         <part id="canvas_ne" x="128" y="96" w="16" h="16" />
@@ -351,12 +351,12 @@
         <part id="pivot_southwest" x="208" y="208" w="7" h="7" />
         <part id="pivot_south" x="216" y="208" w="7" h="7" />
         <part id="pivot_southeast" x="224" y="208" w="7" h="7" />
-        <part id="icon_rgb" x="0" y="256" w="16" h="16" />
-        <part id="icon_grayscale" x="16" y="256" w="16" h="16" />
-        <part id="icon_indexed" x="32" y="256" w="16" h="16" />
-        <part id="icon_black" x="48" y="256" w="16" h="16" />
-        <part id="icon_white" x="64" y="256" w="16" h="16" />
-        <part id="icon_transparent" x="80" y="256" w="16" h="16" />
+        <part id="icon_rgb" x="0" y="252" w="20" h="20" />
+        <part id="icon_grayscale" x="25" y="254" w="18" h="18" />
+        <part id="icon_indexed" x="48" y="256" w="16" h="16" />
+        <part id="icon_black" x="64" y="256" w="16" h="16" />
+        <part id="icon_white" x="80" y="256" w="16" h="16" />
+        <part id="icon_transparent" x="96" y="256" w="16" h="16" />
         <part id="color_wheel_indicator" x="48" y="192" w="4" h="4" />
         <part id="no_symmetry" x="144" y="240" w="13" h="13" />
         <part id="horizontal_symmetry" x="160" y="240" w="13" h="13" />
@@ -781,9 +781,10 @@
             <background part="flag_highlight" state="focus" />
             <background part="flag_highlight" state="selected" />
         </style>
-        <style id="warning_box" padding-left="2" padding-right="2" extends="window_button">
+        <style id="warning_box" padding-left="3" padding-right="3">
             <background color="workspace" />
-            <!-- <background color="hot_face" state="mouse" /> -->
+            <background part="check_hot" state="mouse" />
+            <background part="check_focus" state="selected" />
             <icon part="warning_box" align="center middle" />
         </style>
         <style id="timeline">
