@@ -203,7 +203,7 @@
         <part id="toolbutton_last" x="112" y="48" w1="2" w2="11" w3="3" h1="2" h2="10" h3="4" />
         <part id="toolbutton_pushed" x="128" y="32" w1="3" w2="10" w3="3" h1="3" h2="9" h3="4" />
         <part id="buttonset_item_normal" x="96" y="16" w1="2" w2="11" w3="3" h1="2" h2="11" h3="3" />
-        <part id="buttonset_item_hot_focused" x="128" y="0" w1="3" w2="10" w3="3" h1="3" h2="9" h3="4" />
+        <part id="buttonset_item_hot_focused" x="128" y="0" w1="3" w2="10" w3="3" h1="3" h2="10" h3="3" />
         <part id="buttonset_item_pushed" x="112" y="16" w1="3" w2="10" w3="3" h1="3" h2="10" h3="3" />
         <part id="tab_normal" x="2" y="112" w1="4" w2="5" w3="5" h1="4" h2="6" h3="2" />
         <part id="tab_active" x="16" y="112" w1="4" w2="7" w3="5" h1="4" h2="6" h3="2" />
@@ -412,8 +412,8 @@
         <part id="aseprite_face_mouse" x="28" y="272" w="28" h="30" />
         <part id="aseprite_face_pushed" x="56" y="272" w="28" h="30" />
         <part id="icon_aspect_ratio" x="256" y="264" w="10" h="8" />
-        <part id="linear_gradient" x="176" y="208" w="8" h="8" />
-        <part id="radial_gradient" x="184" y="208" w="8" h="8" />
+        <part id="linear_gradient" x="176" y="207" w="8" h="9" />
+        <part id="radial_gradient" x="184" y="207" w="8" h="9" />
         <part id="folder_icon_small" x="144" y="272" w="10" h="8" />
         <part id="folder_icon_big" x="176" y="272" w="32" h="32" />
         <part id="folder_icon_medium" x="160" y="272" w="16" h="16" />
