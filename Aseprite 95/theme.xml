@@ -193,8 +193,8 @@
         <part id="combobox_arrow_right" x="99" y="196" w="9" h="9" />
         <part id="combobox_arrow_right_selected" x="115" y="196" w="9" h="9" />
         <part id="combobox_arrow_right_disabled" x="131" y="196" w="9" h="9" />
-        <part id="newfolder" x="99" y="211" w="9" h="9" />
-        <part id="newfolder_selected" x="115" y="211" w="9" h="9" />
+        <part id="newfolder" x="99" y="211" w="10" h="9" />
+        <part id="newfolder_selected" x="115" y="211" w="10" h="9" />
         <part id="list_view" x="96" y="224" w="9" h="9" />
         <part id="small_icon_view" x="105" y="224" w="9" h="9" />
         <part id="big_icon_view" x="114" y="224" w="9" h="9" />
@@ -421,8 +421,8 @@
         <part id="outline_square" x="160" y="224" w="13" h="15" />
         <part id="outline_horizontal" x="176" y="224" w="13" h="15" />
         <part id="outline_vertical" x="192" y="224" w="13" h="15" />
-        <part id="outline_empty_pixel" x="208" y="224" w="5" h="5" />
-        <part id="outline_full_pixel" x="214" y="224" w="5" h="5" />
+        <part id="outline_empty_pixel" x="208" y="223" w="6" h="7" />
+        <part id="outline_full_pixel" x="217" y="223" w="6" h="7" />
         <part id="dynamics" x="176" y="144" w="16" h="16" />
         <part id="check_hot" x="32" y="52" w1="3" w2="4" w3="3" h1="3" h2="4" h3="3" />
     </parts>
