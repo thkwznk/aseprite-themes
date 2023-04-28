@@ -35,7 +35,7 @@
         <color id="disabled" value="#808080" />
         <color id="face" value="#c0c0c0" />
         <color id="hot_face" value="#faf0e6" />
-        <color id="selected" value="#ff5555" />
+        <color id="selected" value="#0000a8" />
         <color id="selected_text" value="#ffffff" />
         <color id="separator_label" value="#808080" />
         <color id="background" value="#ffffff" />
@@ -44,10 +44,10 @@
         <color id="textbox_code_face" value="#eeeeee" />
         <color id="entry_suffix" value="#c0c0c0" />
         <color id="link_text" value="#0000a8" />
-        <color id="link_hover" value="#ff5555" />
+        <color id="link_hover" value="#ff0081" />
         <color id="button_normal_text" value="#000000" />
         <color id="button_hot_text" value="#000000" />
-        <color id="button_selected_text" value="#ffffff" />
+        <color id="button_selected_text" value="#000000" />
         <color id="check_hot_face" value="#ffffff" />
         <color id="check_focus_face" value="#c0c0c0" />
         <color id="radio_hot_face" value="#ffebb6" />
@@ -169,10 +169,10 @@
         <part id="window_play_icon" x="22" y="11" w="6" h="7" />
         <part id="window_stop_icon" x="28" y="11" w="6" h="7" />
         <part id="window_center_icon" x="34" y="11" w="6" h="7" />
-        <part id="slider_full" x="0" y="144" w1="5" w2="6" w3="5" h1="5" h2="5" h3="6" />
-        <part id="slider_empty" x="16" y="144" w1="5" w2="6" w3="5" h1="5" h2="5" h3="6" />
-        <part id="slider_full_focused" x="0" y="160" w1="5" w2="6" w3="5" h1="5" h2="5" h3="6" />
-        <part id="slider_empty_focused" x="16" y="160" w1="5" w2="6" w3="5" h1="5" h2="5" h3="6" />
+        <part id="slider_full" x="0" y="144" w1="5" w2="6" w3="5" h1="5" h2="6" h3="5" />
+        <part id="slider_empty" x="16" y="144" w1="5" w2="6" w3="5" h1="5" h2="6" h3="5" />
+        <part id="slider_full_focused" x="0" y="160" w1="5" w2="6" w3="5" h1="5" h2="6" h3="5" />
+        <part id="slider_empty_focused" x="16" y="160" w1="5" w2="6" w3="5" h1="5" h2="6" h3="5" />
         <part id="mini_slider_full" x="32" y="144" w1="2" w2="12" w3="2" h1="2" h2="11" h3="3" />
         <part id="mini_slider_empty" x="48" y="144" w1="2" w2="12" w3="2" h1="2" h2="11" h3="3" />
         <part id="mini_slider_full_focused" x="32" y="160" w1="2" w2="12" w3="2" h1="2" h2="11" h3="3" />
@@ -226,8 +226,8 @@
         <part id="colorbar_3" x="16" y="208" w1="5" w2="6" w3="5" h1="5" h2="6" h3="5" />
         <part id="colorbar_selection_hot" x="0" y="224" w1="5" w2="6" w3="5" h1="5" h2="6" h3="5" />
         <part id="colorbar_selection" x="16" y="224" w1="5" w2="6" w3="5" h1="5" h2="6" h3="5" />
-        <part id="scrollbar_bg" x="64" y="144" w1="5" w2="6" w3="5" h1="5" h2="6" h3="5" />
-        <part id="scrollbar_thumb" x="64" y="160" w1="5" w2="6" w3="5" h1="5" h2="6" h3="5" />
+        <part id="scrollbar_bg" x="64" y="144" w1="4" w2="8" w3="4" h1="4" h2="7" h3="5" />
+        <part id="scrollbar_thumb" x="64" y="160" w1="4" w2="8" w3="4" h1="4" h2="8" h3="4" />
         <part id="mini_scrollbar_bg" x="64" y="176" w1="3" w2="2" w3="3" h1="3" h2="2" h3="3" />
         <part id="mini_scrollbar_thumb" x="72" y="176" w1="3" w2="2" w3="3" h1="3" h2="2" h3="3" />
         <part id="mini_scrollbar_bg_hot" x="64" y="184" w1="3" w2="2" w3="3" h1="3" h2="2" h3="3" />
