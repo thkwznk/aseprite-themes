@@ -40,11 +40,6 @@
         "id": "aseprite-95-rose",
         "path": "./rose",
         "variant": "Rose"
-      },
-      {
-        "id": "aseprite-95-blender",
-        "path": "./blender",
-        "variant": "Blender"
       }
     ]
   }
