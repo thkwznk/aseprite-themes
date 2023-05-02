@@ -9,7 +9,7 @@
     "url": "https://thkaspar.itch.io/"
   },
   "contributors": [],
-  "publisher": "aseprite",
+  "publisher": "thkwznk",
   "license": "CC-BY-4.0",
   "categories": [
     "Themes"
@@ -17,8 +17,34 @@
   "contributes": {
     "themes": [
       {
-        "id": "Aseprite 95",
-        "path": "."
+        "id": "aseprite-95-default",
+        "path": ".",
+        "variant": "Default"
+      },
+      {
+        "id": "aseprite-95-rainy-day",
+        "path": "./rainy-day",
+        "variant": "Rainy Day"
+      },
+      {
+        "id": "aseprite-95-eggplant",
+        "path": "./eggplant",
+        "variant": "Eggplant"
+      },
+      {
+        "id": "aseprite-95-desert",
+        "path": "./desert",
+        "variant": "Desert"
+      },
+      {
+        "id": "aseprite-95-rose",
+        "path": "./rose",
+        "variant": "Rose"
+      },
+      {
+        "id": "aseprite-95-blender",
+        "path": "./blender",
+        "variant": "Blender"
       }
     ]
   }
