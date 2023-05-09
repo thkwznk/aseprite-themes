@@ -36,7 +36,7 @@
         <color id="hot_face" value="#faf0e6" />
         <color id="selected" value="#008080" />
         <color id="selected_text" value="#ffffff" />
-        <color id="separator_label" value="#588078" />
+        <color id="separator_label" value="#000000" />
         <color id="background" value="#ffffff" />
         <color id="textbox_text" value="#000000" />
         <color id="textbox_face" value="#ffffff" />
@@ -102,7 +102,7 @@
         <color id="timeline_padding" value="#7d929e" />
         <color id="timeline_band_highlight" value="#008080" />
         <color id="timeline_band_bg" value="#76858e" />
-        <color id="status_bar_text" value="#2e3234" />
+        <color id="status_bar_text" value="#000000" />
         <color id="status_bar_face" value="#90b0a8" />
         <color id="flag_normal" value="#d3cbbe" />
         <color id="flag_active" value="#ff0000" />
@@ -677,7 +677,7 @@
         <style id="workspace_splitter">
             <background color="workspace" />
         </style>
-        <style id="horizontal_separator" border-left="2" border-top="4" border-right="2" border-bottom="0">
+        <style id="horizontal_separator" border-left="2" border-top="4" border-right="2" border-bottom="4">
             <background color="window_face" />
             <background-border part="separator_horz" align="middle" />
             <text color="separator_label" x="4" align="left middle" />
