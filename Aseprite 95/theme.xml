@@ -225,7 +225,7 @@
         <part id="colorbar_3" x="16" y="208" w1="5" w2="6" w3="5" h1="5" h2="6" h3="5" />
         <part id="colorbar_selection_hot" x="0" y="224" w1="5" w2="6" w3="5" h1="5" h2="6" h3="5" />
         <part id="colorbar_selection" x="16" y="224" w1="5" w2="6" w3="5" h1="5" h2="6" h3="5" />
-        <part id="scrollbar_bg" x="64" y="144" w1="4" w2="8" w3="4" h1="4" h2="7" h3="5" />
+        <part id="scrollbar_bg" x="64" y="144" w1="4" w2="8" w3="4" h1="4" h2="8" h3="4" />
         <part id="scrollbar_thumb" x="64" y="160" w1="4" w2="8" w3="4" h1="4" h2="8" h3="4" />
         <part id="mini_scrollbar_bg" x="64" y="176" w1="3" w2="2" w3="3" h1="3" h2="2" h3="3" />
         <part id="mini_scrollbar_thumb" x="72" y="176" w1="3" w2="2" w3="3" h1="3" h2="2" h3="3" />
