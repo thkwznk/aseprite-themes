@@ -4,7 +4,7 @@
 
 Unreleased:
 
-- ...
+- [Fix] Radio Button has a correct color in variants
 
 Update v2.0.0:
 
