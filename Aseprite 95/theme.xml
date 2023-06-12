@@ -157,8 +157,8 @@
         <part id="sunken_focused" x="0" y="48" w1="4" w2="4" w3="4" h1="4" h2="4" h3="4" />
         <part id="sunken2_normal" x="0" y="64" w1="4" w2="8" w3="4" h1="4" h2="8" h3="4" />
         <part id="sunken2_focused" x="0" y="80" w1="4" w2="8" w3="4" h1="4" h2="8" h3="4" />
-        <part id="sunken_mini_normal" x="16" y="64" w1="3" w2="6" w3="3" h1="3" h2="6" h3="3" />
-        <part id="sunken_mini_focused" x="16" y="80" w1="3" w2="6" w3="3" h1="3" h2="6" h3="3" />
+        <part id="sunken_mini_normal" x="16" y="32" w1="4" w2="4" w3="4" h1="4" h2="4" h3="4" />
+        <part id="sunken_mini_focused" x="16" y="32" w1="4" w2="4" w3="4" h1="4" h2="4" h3="4" />
         <part id="window" x="0" y="0" w1="3" w2="7" w3="3" h1="16" h2="6" h3="3" />
         <part id="menu" x="0" y="96" w1="3" w2="10" w3="3" h1="3" h2="10" h3="3" />
         <part id="window_button_normal" x="16" y="0" w="10" h="10" />
@@ -405,8 +405,8 @@
         <part id="tool_jumble" x="176" y="112" w="16" h="16" />
         <part id="tool_configuration" x="144" y="128" w="16" h="16" />
         <part id="tool_minieditor" x="160" y="128" w="16" h="16" />
-        <part id="simple_color_border" x="16" y="32" w1="3" w2="6" w3="3" h1="3" h2="6" h3="3" />
-        <part id="simple_color_selected" x="32" y="32" w1="3" w2="6" w3="3" h1="3" h2="6" h3="3" />
+        <part id="simple_color_border" x="16" y="32" w1="4" w2="4" w3="4" h1="4" h2="4" h3="4" />
+        <part id="simple_color_selected" x="32" y="32" w1="4" w2="4" w3="4" h1="4" h2="4" h3="4" />
         <part id="aseprite_face" x="0" y="272" w="28" h="30" />
         <part id="aseprite_face_mouse" x="28" y="272" w="28" h="30" />
         <part id="aseprite_face_pushed" x="56" y="272" w="28" h="30" />
@@ -444,6 +444,9 @@
         <part id="buttonset_item_active" x="128" y="48" w1="2" w2="11" w3="3" h1="2" h2="11" h3="3" />
         <part id="buttonset_item_hot" x="128" y="16" w1="2" w2="11" w3="3" h1="2" h2="11" h3="3" />
         <part id="buttonset_item_focused" x="128" y="80" w1="2" w2="11" w3="3" h1="2" h2="11" h3="3" />
+        <part id="combobox_button_normal" x="16" y="64" w1="4" w2="8" w3="4" h1="4" h2="8" h3="4" />
+        <part id="combobox_button_focused" x="16" y="80" w1="4" w2="8" w3="4" h1="4" h2="8" h3="4" />
+        <part id="combobox_button_pushed" x="16" y="96" w1="4" w2="8" w3="4" h1="4" h2="8" h3="4" />
     </parts>
     <styles>
         <style id="box" />
@@ -624,7 +627,11 @@
             <background-border part="sunken2_focused" state="focus" />
             <background-border part="sunken2_normal" />
         </style>
-        <style id="combobox_button" extends="mini_button" padding="0">
+        <style id="combobox_button" extends="mini_button" padding-left="1" padding-right="1">
+            <background-border part="combobox_button_normal" />
+            <background-border part="combobox_button_focused" state="mouse" />
+            <background-border part="combobox_button_pushed" state="focus" />
+            <background-border part="combobox_button_pushed" state="selected" />
             <icon part="combobox_arrow_down" />
             <icon part="combobox_arrow_down_selected" state="selected" />
             <icon part="combobox_arrow_down_disabled" y="1" state="disabled" />
