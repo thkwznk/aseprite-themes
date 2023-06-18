@@ -3,7 +3,7 @@ param ($Path)
 $Package = Get-Content (Join-Path -Path $Path -ChildPath "package.json") | Out-String | ConvertFrom-Json
 $PackageName = "$($Package.displayName) v$($Package.version)"
 
-$ArchiveFiles = Get-ChildItem -Name -Path $Path -Exclude "*.md", "*.zip", "*.ps1", "*.itch-toml", "*.aseprite-extension", "readme-images", "*.gif"  | ForEach-Object { ".\$Path\$_" }
+$ArchiveFiles = Get-ChildItem -Name -Path $Path -Exclude "*.md", "*.zip", "*.ps1", "*.itch-toml", "*.aseprite-extension", "*.gif", "readme-images", "references", "template"  | ForEach-Object { ".\$Path\$_" }
 
 Compress-Archive -Path $ArchiveFiles -DestinationPath ".\Output\$PackageName.zip"
 
