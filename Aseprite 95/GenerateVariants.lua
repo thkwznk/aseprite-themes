@@ -179,6 +179,7 @@ local variants = {
                 alpha = 255
             },
             ["link"] = Color {red = 255, green = 0, blue = 255, alpha = 255},
+            ["link_hover"] = Color {red = 255, green = 255, blue = 255, alpha = 255},
             ["background"] = Color {
                 red = 160,
                 green = 143,
@@ -214,6 +215,7 @@ local variants = {
                 alpha = 255
             },
             ["link"] = Color {red = 0, green = 255, blue = 255, alpha = 255},
+            ["link_hover"] = Color {red = 255, green = 255, blue = 255, alpha = 255},
             ["background"] = Color {red = 64, green = 0, blue = 64, alpha = 255}
         }
     },
@@ -244,6 +246,7 @@ local variants = {
                 alpha = 255
             },
             ["link"] = Color {red = 0, green = 255, blue = 0, alpha = 255},
+            ["link_hover"] = Color {red = 255, green = 255, blue = 255, alpha = 255},
             ["background"] = Color {red = 0, green = 0, blue = 0, alpha = 255}
         }
     },
@@ -274,6 +277,7 @@ local variants = {
                 alpha = 255
             },
             ["link"] = Color {red = 255, green = 0, blue = 0, alpha = 255},
+            ["link_hover"] = Color {red = 255, green = 255, blue = 255, alpha = 255},
             ["background"] = Color {
                 red = 128,
                 green = 128,
