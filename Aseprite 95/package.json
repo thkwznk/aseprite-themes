@@ -18,7 +18,7 @@
     "themes": [
       {
         "id": "aseprite-95-default",
-        "path": ".",
+        "path": "./default",
         "variant": "Default"
       },
       {
