@@ -146,7 +146,9 @@ local template = {
             alpha = 255
         },
         ["link"] = Color {red = 0, green = 0, blue = 168, alpha = 255},
+        ["text_regular"] = Color {red = 0, green = 255, blue = 255, alpha = 255},
         ["background"] = Color {red = 120, green = 96, blue = 80, alpha = 255}
+        -- TODO: Add a template color for the input background + mask it in the sheet.png
     }
 }
 
@@ -352,5 +354,70 @@ local templateDirectoryPath = app.fs.joinPath(InputDirectoryPath, "template")
 
 for id, data in pairs(variants) do
     GenerateVariant(template, data, templateDirectoryPath,
+                    app.fs.joinPath(InputDirectoryPath, id))
+end
+
+local darkVariants = {
+    dark = {
+        colors = {
+            ["button_shadow"] = Color {
+                red = 37,
+                green = 37,
+                blue = 37,
+                alpha = 255
+            },
+            ["button_regular"] = Color {
+                red = 59,
+                green = 59,
+                blue = 59,
+                alpha = 255
+            },
+            ["button_highlight"] = Color {
+                red = 88,
+                green = 88,
+                blue = 88,
+                alpha = 255
+            },
+            ["window_titlebar"] = Color {
+                red = 0,
+                green = 0,
+                blue = 0,
+                alpha = 255
+            },
+            ["link"] = Color {red = 43, green = 123, blue = 244, alpha = 255},
+            ["link_hover"] = Color {
+                red = 255,
+                green = 255,
+                blue = 255,
+                alpha = 255
+            },
+            ["text_regular"] = Color {
+                red = 128,
+                green = 128,
+                blue = 128,
+                alpha = 255
+            },
+            ["text_hover"] = Color {
+                red = 255,
+                green = 255,
+                blue = 255,
+                alpha = 255
+            },
+            ["input_background"] = Color {
+                red = 0,
+                green = 0,
+                blue = 0,
+                alpha = 255
+            },
+            ["background"] = Color {red = 37, green = 37, blue = 37, alpha = 37}
+        }
+    }
+}
+
+local darkTemplateDirectoryPath = app.fs.joinPath(InputDirectoryPath,
+                                                  "template-dark")
+
+for id, data in pairs(darkVariants) do
+    GenerateVariant(template, data, darkTemplateDirectoryPath,
                     app.fs.joinPath(InputDirectoryPath, id))
 end

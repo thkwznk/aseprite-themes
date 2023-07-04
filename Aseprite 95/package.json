@@ -40,6 +40,11 @@
         "id": "aseprite-95-rose",
         "path": "./rose",
         "variant": "Rose"
+      },
+      {
+        "id": "aseprite-95-dark",
+        "path": "./dark",
+        "variant": "Dark"
       }
     ]
   }
