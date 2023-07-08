@@ -147,8 +147,27 @@ local template = {
         },
         ["link"] = Color {red = 0, green = 0, blue = 168, alpha = 255},
         ["text_regular"] = Color {red = 0, green = 255, blue = 255, alpha = 255},
-        ["background"] = Color {red = 120, green = 96, blue = 80, alpha = 255}
+        ["background"] = Color {red = 120, green = 96, blue = 80, alpha = 255},
         -- TODO: Add a template color for the input background + mask it in the sheet.png
+        -- Dark Variants Only
+        ["dark_accent_highlight"] = Color {
+            red = 128,
+            green = 255,
+            blue = 0,
+            alpha = 255
+        },
+        ["dark_accent_regular"] = Color {
+            red = 128,
+            green = 192,
+            blue = 0,
+            alpha = 255
+        },
+        ["dark_accent_shadow"] = Color {
+            red = 128,
+            green = 128,
+            blue = 0,
+            alpha = 255
+        }
     }
 }
 
@@ -409,7 +428,25 @@ local darkVariants = {
                 blue = 0,
                 alpha = 255
             },
-            ["background"] = Color {red = 37, green = 37, blue = 37, alpha = 37}
+            ["background"] = Color {red = 37, green = 37, blue = 37, alpha = 37},
+            ["dark_accent_highlight"] = Color {
+                red = 43,
+                green = 123,
+                blue = 244,
+                alpha = 255
+            },
+            ["dark_accent_regular"] = Color {
+                red = 21,
+                green = 61,
+                blue = 122,
+                alpha = 255
+            },
+            ["dark_accent_shadow"] = Color {
+                red = 37,
+                green = 37,
+                blue = 37,
+                alpha = 255
+            }
         }
     }
 }

@@ -76,7 +76,7 @@
         <color id="tab_active_face" value="<button_regular>" />
         <color id="popup_window_border" value="#000000" />
         <color id="tooltip_text" value="<text_hover>" />
-        <color id="tooltip_face" value="#ffffbf" />
+        <color id="tooltip_face" value="<dark_accent_highlight>" />
         <color id="filelist_even_row_text" value="<text_regular>" />
         <color id="filelist_even_row_face" value="#000000" />
         <color id="filelist_odd_row_text" value="<text_regular>" />
