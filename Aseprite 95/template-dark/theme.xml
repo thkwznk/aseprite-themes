@@ -66,6 +66,7 @@
         <color id="editor_view_face" value="<background>" />
         <color id="listitem_normal_text" value="<text_regular>" />
         <color id="listitem_normal_face" value="<input_background>" />
+        <color id="listitem_hot_text" value="<text_hover>" />
         <color id="listitem_hot_face" value="<button_shadow>" />
         <color id="listitem_selected_text" value="<text_hover>" />
         <color id="listitem_selected_face" value="<button_regular>" />
@@ -708,9 +709,12 @@
             <background color="listitem_selected_face" state="selected" />
             <text color="text" align="left" x="2" />
             <text color="listitem_selected_text" align="left" x="2" state="selected" />
+            <text color="listitem_hot_text" align="left" x="2" state="mouse" />
         </style>
         <style id="recent_file_detail" border="2" border-left="0" extends="recent_file">
             <text color="disabled" align="left" x="2" />
+            <text color="listitem_normal_text" align="left" x="2" state="selected" />
+            <text color="listitem_normal_text" align="left" x="2" state="mouse" />
         </style>
         <style id="recent_file_pin">
             <background color="background" />
@@ -718,8 +722,10 @@
             <background color="listitem_selected_face" state="selected" />
             <icon part="unpinned" align="center middle" color="text" />
             <icon part="unpinned" align="center middle" color="listitem_selected_text" state="selected" />
+            <icon part="unpinned" align="center middle" color="listitem_hot_text" state="mouse" />
             <icon part="pinned" align="center middle" color="text" state="focus" />
             <icon part="pinned" align="center middle" color="listitem_selected_text" state="focus selected" />
+            <icon part="pinned" align="center middle" color="listitem_hot_text" state="mouse" />
         </style>
         <style id="news_item" border="2">
             <background color="background" />
@@ -727,10 +733,12 @@
             <background color="listitem_selected_face" state="selected" />
             <text color="text" align="left" x="2" />
             <text color="listitem_selected_text" align="left" x="2" state="selected" />
+            <text color="listitem_hot_text" align="left" x="2" state="mouse" />
         </style>
         <style id="news_item_detail" extends="news_item" border="2">
             <text color="disabled" align="left top wordwrap" x="2" />
-            <text color="listitem_selected_text" align="left top wordwrap" x="2" state="selected" />
+            <text color="listitem_normal_text" align="left top wordwrap" x="2" state="selected" />
+            <text color="listitem_normal_text" align="left top wordwrap" x="2" state="mouse" />
         </style>
         <style id="scrollbar">
             <background part="scrollbar_bg" />
