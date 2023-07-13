@@ -1,5 +1,4 @@
-local InputDirectoryPath =
-    "C:\\Users\\kacwo\\Documents\\GitHub\\aseprite-themes\\Aseprite 95" -- TODO: Get this from a parameter
+local InputDirectoryPath = app.params["input"]
 
 function ColorToHex(color)
     return string.format("#%02x%02x%02x", color.red, color.green, color.blue)
@@ -49,11 +48,25 @@ function UpdateThemeXml(theme, templatePath, outputPath)
     WriteAll(outputPath, xmlContent)
 end
 
+function CopySheetData(templatePath, outputPath)
+    local content = ReadAll(templatePath)
+    WriteAll(outputPath, content)
+end
+
 function GenerateVariant(template, theme, templateDirectory, outputDirectory)
+    if not app.fs.isDirectory(outputDirectory) then
+        app.fs.makeDirectory(outputDirectory)
+    end
+
     local templateSheetPath = app.fs.joinPath(templateDirectory, "sheet.png")
     local templateXmlPath = app.fs.joinPath(templateDirectory, "theme.xml")
+    local templateSheetDataPath = app.fs.joinPath(templateDirectory,
+                                                  "sheet.aseprite-data")
+
     local outputSheetPath = app.fs.joinPath(outputDirectory, "sheet.png")
     local outputXmlPath = app.fs.joinPath(outputDirectory, "theme.xml")
+    local outputSheetDataPath = app.fs.joinPath(outputDirectory,
+                                                "sheet.aseprite-data")
 
     -- Prepare color lookup
     local Map = {}
@@ -109,20 +122,9 @@ function GenerateVariant(template, theme, templateDirectory, outputDirectory)
     -- Update the XML theme file
     UpdateThemeXml(theme, templateXmlPath, outputXmlPath)
 
-    app.command.Refresh()
+    -- Copy the sheet Aseprite data
+    CopySheetData(templateSheetDataPath, outputSheetDataPath)
 end
-
--- Eggplant:
---     Buttons:
---     #c8d8d8
---     #90b0a8
---     #588078
-
---     Window Titlebar:
---     #008080
-
---     Background:
---     #400040
 
 local template = {
     colors = {
@@ -148,7 +150,9 @@ local template = {
         ["link"] = Color {red = 0, green = 0, blue = 168, alpha = 255},
         ["text_regular"] = Color {red = 0, green = 255, blue = 255, alpha = 255},
         ["background"] = Color {red = 120, green = 96, blue = 80, alpha = 255},
+
         -- TODO: Add a template color for the input background + mask it in the sheet.png
+
         -- Dark Variants Only
         ["dark_accent_highlight"] = Color {
             red = 128,

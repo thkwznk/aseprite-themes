@@ -1,1 +1,0 @@
-aseprite -b -script .\GenerateVariants.lua
