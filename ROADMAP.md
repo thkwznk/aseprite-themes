@@ -4,7 +4,7 @@
 
 Unreleased:
 
-- [Fix] Fonts switched to Arial Unicode, which makes them work correctly on Mac and Linux
+- 
 
 ## Aseprite 95
 
