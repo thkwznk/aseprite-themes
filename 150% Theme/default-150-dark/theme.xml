@@ -5,8 +5,8 @@
         <author name="Ilija Melentijevic" url="http://ilkke.blogspot.com/" />
     </authors>
     <fonts>
-        <font id="default" name="Arial" size="12" />
-        <font id="mini" name="Arial" size="9" />
+        <font id="default" name="Unicode" size="12" />
+        <font id="mini" name="Unicode" size="9" />
     </fonts>
     <dimensions>
         <dim id="scrollbar_size" value="18" />

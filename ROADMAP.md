@@ -1,5 +1,11 @@
 # Roadmap
 
+## Aseprite 150%
+
+Unreleased:
+
+- [Fix] Fonts switched to Arial Unicode, which makes them work correctly on Mac and Linux
+
 ## Aseprite 95
 
 Unreleased:
