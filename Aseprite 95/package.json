@@ -45,6 +45,11 @@
         "id": "aseprite-95-dark",
         "path": "./dark",
         "variant": "Dark"
+      },
+      {
+        "id": "aseprite-95-gruvbox",
+        "path": "./gruvbox",
+        "variant": "Gruvbox"
       }
     ]
   }

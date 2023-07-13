@@ -150,6 +150,9 @@ local template = {
         ["link"] = Color {red = 0, green = 0, blue = 168, alpha = 255},
         ["text_regular"] = Color {red = 0, green = 255, blue = 255, alpha = 255},
         ["background"] = Color {red = 120, green = 96, blue = 80, alpha = 255},
+        ["white"] = Color {red = 255, green = 255, blue = 255, alpha = 255},
+        ["black"] = Color {red = 0, green = 0, blue = 0, alpha = 255},
+        ["eye"] = Color {red = 255, green = 0, blue = 129, alpha = 255},
 
         -- TODO: Add a template color for the input background + mask it in the sheet.png
 
@@ -451,6 +454,86 @@ local darkVariants = {
                 blue = 37,
                 alpha = 255
             }
+        }
+    },
+    gruvbox = {
+        colors = {
+            ["button_shadow"] = Color {
+                red = 40,
+                green = 40,
+                blue = 40,
+                alpha = 255
+            },
+            ["button_regular"] = Color {
+                red = 60,
+                green = 56,
+                blue = 54,
+                alpha = 255
+            },
+            ["button_highlight"] = Color {
+                red = 80,
+                green = 73,
+                blue = 69,
+                alpha = 255
+            },
+            ["window_titlebar"] = Color {
+                red = 214,
+                green = 93,
+                blue = 14,
+                alpha = 255
+            },
+            ["link"] = Color {red = 69, green = 133, blue = 136, alpha = 255},
+            ["link_hover"] = Color {
+                red = 131,
+                green = 165,
+                blue = 152,
+                alpha = 255
+            },
+            ["text_regular"] = Color {
+                red = 168,
+                green = 153,
+                blue = 132,
+                alpha = 255
+            },
+            ["text_hover"] = Color {
+                red = 235,
+                green = 219,
+                blue = 178,
+                alpha = 255
+            },
+            ["input_background"] = Color {
+                red = 29,
+                green = 32,
+                blue = 33,
+                alpha = 255
+            },
+            ["background"] = Color {
+                red = 29,
+                green = 32,
+                blue = 33,
+                alpha = 255
+            },
+            ["dark_accent_highlight"] = Color {
+                red = 142,
+                green = 192,
+                blue = 124,
+                alpha = 255
+            },
+            ["dark_accent_regular"] = Color {
+                red = 104,
+                green = 157,
+                blue = 106,
+                alpha = 255
+            },
+            ["dark_accent_shadow"] = Color {
+                red = 69,
+                green = 133,
+                blue = 136,
+                alpha = 255
+            },
+            ["white"] = Color {red = 235, green = 219, blue = 178, alpha = 255},
+            ["black"] = Color {red = 29, green = 32, blue = 33, alpha = 255},
+            ["eye"] = Color {red = 69, green = 133, blue = 136, alpha = 255}
         }
     }
 }
