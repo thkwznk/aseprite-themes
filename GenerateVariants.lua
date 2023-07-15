@@ -220,6 +220,47 @@ local variants = {
             }
         }
     },
+    teal = {
+        colors = {
+            ["button_shadow"] = Color {
+                red = 128,
+                green = 128,
+                blue = 128,
+                alpha = 255
+            },
+            ["button_regular"] = Color {
+                red = 192,
+                green = 192,
+                blue = 192,
+                alpha = 255
+            },
+            ["button_highlight"] = Color {
+                red = 255,
+                green = 255,
+                blue = 255,
+                alpha = 255
+            },
+            ["window_titlebar"] = Color {
+                red = 0,
+                green = 128,
+                blue = 128,
+                alpha = 255
+            },
+            ["link"] = Color {red = 0, green = 0, blue = 168, alpha = 255},
+            ["link_hover"] = Color {
+                red = 255,
+                green = 0,
+                blue = 128,
+                alpha = 255
+            },
+            ["background"] = Color {
+                red = 128,
+                green = 128,
+                blue = 128,
+                alpha = 255
+            }
+        }
+    },
     desert = {
         colors = {
             ["button_shadow"] = Color {
@@ -262,6 +303,43 @@ local variants = {
             ["eye"] = Color {red = 0, green = 192, blue = 255, alpha = 255}
         }
     },
+    spruce = {
+        colors = {
+            ["button_shadow"] = Color {
+                red = 88,
+                green = 151,
+                blue = 103,
+                alpha = 255
+            },
+            ["button_regular"] = Color {
+                red = 160,
+                green = 200,
+                blue = 168,
+                alpha = 255
+            },
+            ["button_highlight"] = Color {
+                red = 208,
+                green = 224,
+                blue = 208,
+                alpha = 255
+            },
+            ["window_titlebar"] = Color {
+                red = 88,
+                green = 151,
+                blue = 103,
+                alpha = 255
+            },
+            ["link"] = Color {red = 0, green = 255, blue = 255, alpha = 255},
+            ["link_hover"] = Color {
+                red = 255,
+                green = 255,
+                blue = 255,
+                alpha = 255
+            },
+            ["background"] = Color {red = 64, green = 0, blue = 64, alpha = 255},
+            ["eye"] = Color {red = 255, green = 128, blue = 0, alpha = 255}
+        }
+    },
     eggplant = {
         colors = {
             ["button_shadow"] = Color {
@@ -296,6 +374,43 @@ local variants = {
                 alpha = 255
             },
             ["background"] = Color {red = 64, green = 0, blue = 64, alpha = 255},
+            ["eye"] = Color {red = 255, green = 128, blue = 0, alpha = 255}
+        }
+    },
+    ["slate"] = {
+        colors = {
+            ["button_shadow"] = Color {
+                red = 87,
+                green = 128,
+                blue = 151,
+                alpha = 255
+            },
+            ["button_regular"] = Color {
+                red = 159,
+                green = 184,
+                blue = 200,
+                alpha = 255
+            },
+            ["button_highlight"] = Color {
+                red = 207,
+                green = 223,
+                blue = 224,
+                alpha = 255
+            },
+            ["window_titlebar"] = Color {
+                red = 87,
+                green = 128,
+                blue = 151,
+                alpha = 255
+            },
+            ["link"] = Color {red = 0, green = 0, blue = 168, alpha = 255},
+            ["link_hover"] = Color {
+                red = 255,
+                green = 0,
+                blue = 128,
+                alpha = 255
+            },
+            ["background"] = Color {red = 0, green = 0, blue = 0, alpha = 255},
             ["eye"] = Color {red = 255, green = 128, blue = 0, alpha = 255}
         }
     },
@@ -334,6 +449,48 @@ local variants = {
             },
             ["background"] = Color {red = 0, green = 0, blue = 0, alpha = 255},
             ["eye"] = Color {red = 255, green = 128, blue = 0, alpha = 255}
+        }
+    },
+    lilac = {
+        colors = {
+            ["button_shadow"] = Color {
+                red = 88,
+                green = 79,
+                blue = 176,
+                alpha = 255
+            },
+            ["button_regular"] = Color {
+                red = 175,
+                green = 168,
+                blue = 216,
+                alpha = 255
+            },
+            ["button_highlight"] = Color {
+                red = 216,
+                green = 215,
+                blue = 239,
+                alpha = 255
+            },
+            ["window_titlebar"] = Color {
+                red = 88,
+                green = 79,
+                blue = 176,
+                alpha = 255
+            },
+            ["link"] = Color {red = 128, green = 0, blue = 128, alpha = 255},
+            ["link_hover"] = Color {
+                red = 255,
+                green = 255,
+                blue = 255,
+                alpha = 255
+            },
+            ["background"] = Color {
+                red = 128,
+                green = 128,
+                blue = 128,
+                alpha = 255
+            },
+            ["eye"] = Color {red = 96, green = 208, blue = 80, alpha = 255}
         }
     },
     rose = {

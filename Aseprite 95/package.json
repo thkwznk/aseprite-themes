@@ -22,9 +22,24 @@
         "variant": "Default"
       },
       {
+        "id": "aseprite-95-teal",
+        "path": "./teal",
+        "variant": "Teal"
+      },
+      {
+        "id": "aseprite-95-slate",
+        "path": "./slate",
+        "variant": "Slate"
+      },
+      {
         "id": "aseprite-95-rainy-day",
         "path": "./rainy-day",
         "variant": "Rainy Day"
+      },
+      {
+        "id": "aseprite-95-spruce",
+        "path": "./spruce",
+        "variant": "Spruce"
       },
       {
         "id": "aseprite-95-eggplant",
@@ -35,6 +50,11 @@
         "id": "aseprite-95-desert",
         "path": "./desert",
         "variant": "Desert"
+      },
+      {
+        "id": "aseprite-95-lilac",
+        "path": "./lilac",
+        "variant": "Lilac"
       },
       {
         "id": "aseprite-95-rose",
