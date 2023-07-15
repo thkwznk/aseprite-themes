@@ -17,6 +17,7 @@ Unreleased:
 - [Improvement] Zoom Tool icon has been cleaned up
 - [Improvement] Introduce accent colors for Eggplant, Rainy Day, and Rose variants
 - [Improvement] Add a unique eye icon color for each variant
+- [Improvement] Change button graphics to convey responsiveness better
 
 Update v2.0.0:
 
