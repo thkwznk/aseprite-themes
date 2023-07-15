@@ -518,21 +518,21 @@ local darkVariants = {
                 alpha = 255
             },
             ["dark_accent_highlight"] = Color {
-                red = 142,
-                green = 192,
-                blue = 124,
-                alpha = 255
-            },
-            ["dark_accent_regular"] = Color {
-                red = 104,
-                green = 157,
-                blue = 106,
-                alpha = 255
-            },
-            ["dark_accent_shadow"] = Color {
                 red = 69,
                 green = 133,
                 blue = 136,
+                alpha = 255
+            },
+            ["dark_accent_regular"] = Color {
+                red = 7,
+                green = 102,
+                blue = 120,
+                alpha = 255
+            },
+            ["dark_accent_shadow"] = Color {
+                red = 80,
+                green = 73,
+                blue = 69,
                 alpha = 255
             },
             ["white"] = Color {red = 235, green = 219, blue = 178, alpha = 255},
