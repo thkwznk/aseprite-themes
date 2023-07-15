@@ -258,7 +258,8 @@ local variants = {
                 green = 143,
                 blue = 104,
                 alpha = 255
-            }
+            },
+            ["eye"] = Color {red = 0, green = 192, blue = 255, alpha = 255}
         }
     },
     eggplant = {
@@ -294,7 +295,8 @@ local variants = {
                 blue = 255,
                 alpha = 255
             },
-            ["background"] = Color {red = 64, green = 0, blue = 64, alpha = 255}
+            ["background"] = Color {red = 64, green = 0, blue = 64, alpha = 255},
+            ["eye"] = Color {red = 255, green = 128, blue = 0, alpha = 255}
         }
     },
     ["rainy-day"] = {
@@ -330,7 +332,8 @@ local variants = {
                 blue = 255,
                 alpha = 255
             },
-            ["background"] = Color {red = 0, green = 0, blue = 0, alpha = 255}
+            ["background"] = Color {red = 0, green = 0, blue = 0, alpha = 255},
+            ["eye"] = Color {red = 255, green = 128, blue = 0, alpha = 255}
         }
     },
     rose = {
@@ -354,8 +357,8 @@ local variants = {
                 alpha = 255
             },
             ["window_titlebar"] = Color {
-                red = 168,
-                green = 64,
+                red = 192,
+                green = 0,
                 blue = 0,
                 alpha = 255
             },
@@ -371,7 +374,8 @@ local variants = {
                 green = 128,
                 blue = 128,
                 alpha = 255
-            }
+            },
+            ["eye"] = Color {red = 96, green = 208, blue = 80, alpha = 255}
         }
     }
 }
