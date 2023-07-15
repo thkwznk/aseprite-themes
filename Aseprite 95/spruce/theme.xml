@@ -42,7 +42,7 @@
         <color id="textbox_face" value="#ffffff" />
         <color id="textbox_code_face" value="#eeeeee" />
         <color id="entry_suffix" value="#a0c8a8" />
-        <color id="link_text" value="#00ffff" />
+        <color id="link_text" value="#a800ff" />
         <color id="link_hover" value="#ffffff" />
         <color id="button_normal_text" value="#000000" />
         <color id="button_hot_text" value="#000000" />
