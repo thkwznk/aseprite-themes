@@ -35,7 +35,7 @@
         <color id="face" value="<button_regular>" />
         <color id="hot_face" value="#faf0e6" />
         <color id="selected" value="<button_shadow>" />
-        <color id="selected_text" value="#ffffff" />
+        <color id="selected_text" value="<text_hover>" />
         <color id="separator_label" value="<button_highlight>" />
         <color id="background" value="<input_background>" />
         <color id="textbox_text" value="<text_regular>" />
@@ -55,10 +55,10 @@
         <color id="menuitem_normal_face" value="<button_regular>" />
         <color id="menuitem_hot_text" value="<text_regular>" />
         <color id="menuitem_hot_face" value="<input_background>" />
-        <color id="menuitem_highlight_text" value="#ffffff" />
+        <color id="menuitem_highlight_text" value="<text_hover>" />
         <color id="menuitem_highlight_face" value="<button_shadow>" />
         <color id="window_face" value="<button_regular>" />
-        <color id="window_titlebar_text" value="#ffffff" />
+        <color id="window_titlebar_text" value="<text_hover>" />
         <color id="window_titlebar_face" value="<window_titlebar>" />
         <color id="editor_face" value="<button_shadow>" />
         <color id="editor_sprite_border" value="#000000" />
@@ -71,7 +71,7 @@
         <color id="listitem_selected_text" value="<text_hover>" />
         <color id="listitem_selected_face" value="<button_regular>" />
         <color id="slider_empty_text" value="<text_regular>" />
-        <color id="slider_full_text" value="#ffffff" />
+        <color id="slider_full_text" value="<text_hover>" />
         <color id="tab_normal_text" value="<text_hover>" />
         <color id="tab_active_text" value="<text_hover>" />
         <color id="tab_active_face" value="<button_regular>" />
@@ -82,24 +82,24 @@
         <color id="filelist_even_row_face" value="#000000" />
         <color id="filelist_odd_row_text" value="<text_regular>" />
         <color id="filelist_odd_row_face" value="#000000" />
-        <color id="filelist_selected_row_text" value="#ffffff" />
+        <color id="filelist_selected_row_text" value="<text_hover>" />
         <color id="filelist_selected_row_face" value="<button_shadow>" />
         <color id="filelist_disabled_row_text" value="#ffc8c8" />
         <color id="workspace" value="<button_regular>" />
         <color id="workspace_text" value="<text_regular>" />
         <color id="workspace_link" value="<text_regular>" />
-        <color id="workspace_link_hover" value="#ffffff" />
+        <color id="workspace_link_hover" value="<text_hover>" />
         <color id="timeline_normal" value="#c6c6c6" />
         <color id="timeline_normal_text" value="<text_regular>" />
         <color id="timeline_hover" value="#d9d9d9" />
         <color id="timeline_hover_text" value="<text_regular>" />
         <color id="timeline_active" value="#7d929e" />
-        <color id="timeline_active_text" value="#ffffff" />
+        <color id="timeline_active_text" value="<text_hover>" />
         <color id="timeline_active_hover" value="#99b3c2" />
-        <color id="timeline_active_hover_text" value="#ffffff" />
+        <color id="timeline_active_hover_text" value="<text_hover>" />
         <color id="timeline_clicked" value="#536069" />
-        <color id="timeline_clicked_text" value="#ffffff" />
-        <color id="timeline_focused_text" value="#ffffff" />
+        <color id="timeline_clicked_text" value="<text_hover>" />
+        <color id="timeline_focused_text" value="<text_hover>" />
         <color id="timeline_padding" value="#7d929e" />
         <color id="timeline_band_highlight" value="<background>" />
         <color id="timeline_band_bg" value="#76858e" />
