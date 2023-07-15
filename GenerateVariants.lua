@@ -282,9 +282,9 @@ local variants = {
                 alpha = 255
             },
             ["window_titlebar"] = Color {
-                red = 0,
-                green = 128,
-                blue = 128,
+                red = 168,
+                green = 0,
+                blue = 168,
                 alpha = 255
             },
             ["link"] = Color {red = 0, green = 255, blue = 255, alpha = 255},
@@ -318,9 +318,9 @@ local variants = {
                 alpha = 255
             },
             ["window_titlebar"] = Color {
-                red = 128,
-                green = 128,
-                blue = 128,
+                red = 0,
+                green = 0,
+                blue = 0,
                 alpha = 255
             },
             ["link"] = Color {red = 0, green = 255, blue = 0, alpha = 255},
@@ -354,9 +354,9 @@ local variants = {
                 alpha = 255
             },
             ["window_titlebar"] = Color {
-                red = 159,
-                green = 96,
-                blue = 112,
+                red = 168,
+                green = 64,
+                blue = 0,
                 alpha = 255
             },
             ["link"] = Color {red = 255, green = 0, blue = 0, alpha = 255},
