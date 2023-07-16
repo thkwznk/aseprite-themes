@@ -157,6 +157,9 @@ local template = {
         -- TODO: Add a template color for the input background + mask it in the sheet.png
 
         -- Dark Variants Only
+        ["light_icons"] = Color {red = 0, green = 128, blue = 128, alpha = 255},
+
+        -- Dark Variants Only
         ["dark_accent_highlight"] = Color {
             red = 128,
             green = 255,
@@ -258,6 +261,12 @@ local variants = {
                 green = 128,
                 blue = 128,
                 alpha = 255
+            },
+            ["light_icons"] = Color {
+                red = 0,
+                green = 128,
+                blue = 208,
+                alpha = 255
             }
         }
     },
@@ -300,7 +309,13 @@ local variants = {
                 blue = 104,
                 alpha = 255
             },
-            ["eye"] = Color {red = 0, green = 192, blue = 255, alpha = 255}
+            ["eye"] = Color {red = 0, green = 192, blue = 255, alpha = 255},
+            ["light_icons"] = Color {
+                red = 0,
+                green = 192,
+                blue = 255,
+                alpha = 255
+            }
         }
     },
     spruce = {
@@ -337,7 +352,13 @@ local variants = {
                 alpha = 255
             },
             ["background"] = Color {red = 64, green = 0, blue = 64, alpha = 255},
-            ["eye"] = Color {red = 255, green = 128, blue = 0, alpha = 255}
+            ["eye"] = Color {red = 255, green = 96, blue = 192, alpha = 255},
+            ["light_icons"] = Color {
+                red = 255,
+                green = 96,
+                blue = 192,
+                alpha = 255
+            }
         }
     },
     eggplant = {
@@ -374,7 +395,13 @@ local variants = {
                 alpha = 255
             },
             ["background"] = Color {red = 64, green = 0, blue = 64, alpha = 255},
-            ["eye"] = Color {red = 255, green = 128, blue = 0, alpha = 255}
+            ["eye"] = Color {red = 255, green = 96, blue = 192, alpha = 255},
+            ["light_icons"] = Color {
+                red = 255,
+                green = 96,
+                blue = 192,
+                alpha = 255
+            }
         }
     },
     ["slate"] = {
@@ -411,7 +438,13 @@ local variants = {
                 alpha = 255
             },
             ["background"] = Color {red = 0, green = 0, blue = 0, alpha = 255},
-            ["eye"] = Color {red = 255, green = 128, blue = 0, alpha = 255}
+            ["eye"] = Color {red = 255, green = 128, blue = 0, alpha = 255},
+            ["light_icons"] = Color {
+                red = 255,
+                green = 128,
+                blue = 0,
+                alpha = 255
+            }
         }
     },
     ["rainy-day"] = {
@@ -448,7 +481,13 @@ local variants = {
                 alpha = 255
             },
             ["background"] = Color {red = 0, green = 0, blue = 0, alpha = 255},
-            ["eye"] = Color {red = 255, green = 128, blue = 0, alpha = 255}
+            ["eye"] = Color {red = 255, green = 128, blue = 0, alpha = 255},
+            ["light_icons"] = Color {
+                red = 255,
+                green = 128,
+                blue = 0,
+                alpha = 255
+            }
         }
     },
     lilac = {
@@ -490,7 +529,13 @@ local variants = {
                 blue = 128,
                 alpha = 255
             },
-            ["eye"] = Color {red = 96, green = 208, blue = 80, alpha = 255}
+            ["eye"] = Color {red = 80, green = 224, blue = 0, alpha = 255},
+            ["light_icons"] = Color {
+                red = 80,
+                green = 224,
+                blue = 0,
+                alpha = 255
+            }
         }
     },
     rose = {
@@ -532,7 +577,13 @@ local variants = {
                 blue = 128,
                 alpha = 255
             },
-            ["eye"] = Color {red = 96, green = 208, blue = 80, alpha = 255}
+            ["eye"] = Color {red = 48, green = 224, blue = 255, alpha = 255},
+            ["light_icons"] = Color {
+                red = 48,
+                green = 224,
+                blue = 255,
+                alpha = 255
+            }
         }
     }
 }
