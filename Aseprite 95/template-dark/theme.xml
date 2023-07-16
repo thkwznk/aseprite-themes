@@ -36,7 +36,7 @@
         <color id="hot_face" value="#faf0e6" />
         <color id="selected" value="<button_shadow>" />
         <color id="selected_text" value="<text_hover>" />
-        <color id="separator_label" value="<button_highlight>" />
+        <color id="separator_label" value="<text_regular>" />
         <color id="background" value="<input_background>" />
         <color id="textbox_text" value="<text_regular>" />
         <color id="textbox_face" value="<input_background>" />
