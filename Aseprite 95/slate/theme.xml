@@ -42,8 +42,8 @@
         <color id="textbox_face" value="#ffffff" />
         <color id="textbox_code_face" value="#eeeeee" />
         <color id="entry_suffix" value="#9fb8c8" />
-        <color id="link_text" value="#ffa800" />
-        <color id="link_hover" value="#ff0080" />
+        <color id="link_text" value="#ffe000" />
+        <color id="link_hover" value="#ffffff" />
         <color id="button_normal_text" value="#000000" />
         <color id="button_hot_text" value="#000000" />
         <color id="button_selected_text" value="#000000" />
