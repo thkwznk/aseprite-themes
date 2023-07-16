@@ -62,9 +62,9 @@
         "variant": "Rose"
       },
       {
-        "id": "aseprite-95-dark",
-        "path": "./dark",
-        "variant": "Dark"
+        "id": "aseprite-95-midnight",
+        "path": "./midnight",
+        "variant": "Midnight"
       },
       {
         "id": "aseprite-95-gruvbox",

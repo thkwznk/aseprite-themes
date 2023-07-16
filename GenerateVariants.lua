@@ -596,7 +596,7 @@ for id, data in pairs(variants) do
 end
 
 local darkVariants = {
-    dark = {
+    midnight = {
         colors = {
             ["button_shadow"] = Color {
                 red = 37,
