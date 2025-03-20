@@ -612,8 +612,8 @@
             <text color="disabled" state="disabled"/>
         </style>
         <style id="check_box" border="2">
-            <background color="check_hot_face" state="mouse focus"/>
             <background color="check_focus_face" state="focus"/>
+            <background color="check_hot_face" state="mouse focus"/>
             <background color="check_hot_face" state="mouse"/>
             <newlayer/>
             <background part="check_focus" state="focus"/>

@@ -47,7 +47,7 @@
         <color id="button_normal_text" value="#ffffff"/>
         <color id="button_hot_text" value="#ffffff"/>
         <color id="button_selected_text" value="#808080"/>
-        <color id="check_hot_face" value="#000000"/>
+        <color id="check_hot_face" value="#3b3b3b"/>
         <color id="check_focus_face" value="#3b3b3b"/>
         <color id="radio_hot_face" value="#3b3b3b"/>
         <color id="radio_focus_face" value="#3b3b3b"/>
@@ -614,8 +614,8 @@
             <text color="disabled" state="disabled"/>
         </style>
         <style id="check_box" border="2">
-            <background color="check_hot_face" state="mouse focus"/>
             <background color="check_focus_face" state="focus"/>
+            <background color="check_hot_face" state="mouse focus"/>
             <background color="check_hot_face" state="mouse"/>
             <newlayer/>
             <background part="check_focus" state="focus"/>
