@@ -23,8 +23,8 @@ function RgbaPixelToColor(rgbaPixel)
 end
 
 function ReadAll(filePath)
-    local file = assert(io.open(filePath, "rb"))
-    local content = file:read("*all")
+    local file = assert(io.open(filePath, "r"))
+    local content = file:read("a")
     file:close()
     return content
 end
@@ -37,6 +37,26 @@ function WriteAll(filePath, content)
     end
 end
 
+function CopyAll(inputPath, outputPath)
+    local inputFile = assert(io.open(inputPath, "rb"))
+    local outputFile = io.open(outputPath, "wb")
+
+    if outputFile == nil then
+        inputFile:close()
+        return
+    end
+
+    local line = inputFile:read("l")
+
+    while line ~= nil do
+        outputFile:write(line)
+        line = inputFile:read("l")
+    end
+
+    inputFile:close()
+    outputFile:close()
+end
+
 function UpdateThemeXml(theme, templatePath, outputPath)
     -- Prepare theme.xml
     local xmlContent = ReadAll(templatePath)
@@ -47,11 +67,6 @@ function UpdateThemeXml(theme, templatePath, outputPath)
     end
 
     WriteAll(outputPath, xmlContent)
-end
-
-function CopySheetData(templatePath, outputPath)
-    local content = ReadAll(templatePath)
-    WriteAll(outputPath, content)
 end
 
 function GenerateVariant(template, theme, templateDirectory, outputDirectory)
@@ -124,7 +139,7 @@ function GenerateVariant(template, theme, templateDirectory, outputDirectory)
     UpdateThemeXml(theme, templateXmlPath, outputXmlPath)
 
     -- Copy the sheet Aseprite data
-    CopySheetData(templateSheetDataPath, outputSheetDataPath)
+    CopyAll(templateSheetDataPath, outputSheetDataPath)
 end
 
 local template = {
