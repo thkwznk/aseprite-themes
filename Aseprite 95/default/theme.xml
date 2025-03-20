@@ -423,7 +423,7 @@
         <part id="outline_empty_pixel" x="208" y="223" w="6" h="7"/>
         <part id="outline_full_pixel" x="217" y="223" w="6" h="7"/>
         <part id="dynamics" x="176" y="144" w="16" h="16"/>
-        <part id="check_hot" x="32" y="48" w1="3" w2="4" w3="3" h1="3" h2="4" h3="3"/>
+        <part id="check_hot" x="32" y="52" w1="3" w2="4" w3="3" h1="3" h2="4" h3="3"/>
         <part id="cursor_skew_nw" x="272" y="160" w="16" h="16" focusx="8" focusy="8"/>
         <part id="cursor_skew_ne" x="288" y="160" w="16" h="16" focusx="8" focusy="8"/>
         <part id="cursor_skew_w" x="272" y="176" w="16" h="16" focusx="8" focusy="8"/>
@@ -456,7 +456,7 @@
         <part id="spin_down" x="128" y="269" w="6" h="3"/>
         <part id="right_diagonal_symmetry" x="176" y="240" w="13" h="13"/>
         <part id="left_diagonal_symmetry" x="192" y="240" w="13" h="13"/>
-        <part id="radio_hot" x="32" y="48" w1="3" w2="4" w3="3" h1="3" h2="4" h3="3"/>
+        <part id="radio_hot" x="32" y="52" w1="3" w2="4" w3="3" h1="3" h2="4" h3="3"/>
     </parts>
     <styles>
         <style id="box"/>
