@@ -42,7 +42,8 @@ function UpdateThemeXml(theme, templatePath, outputPath)
     local xmlContent = ReadAll(templatePath)
 
     for id, color in pairs(theme.colors) do
-        xmlContent = xmlContent:gsub("<" .. id .. ">", ColorToHex(color))
+        xmlContent = xmlContent:gsub("\"" .. id .. "\"",
+                                     "\"" .. ColorToHex(color) .. "\"")
     end
 
     WriteAll(outputPath, xmlContent)
@@ -128,51 +129,51 @@ end
 
 local template = {
     colors = {
-        ["button_shadow"] = Color {
+        ["BUTTON_SHADOW"] = Color {
             red = 255,
             green = 0,
             blue = 255,
             alpha = 255
         },
-        ["button_regular"] = Color {red = 255, green = 0, blue = 0, alpha = 255},
-        ["button_highlight"] = Color {
+        ["BUTTON_REGULAR"] = Color {red = 255, green = 0, blue = 0, alpha = 255},
+        ["BUTTON_HIGHLIGHT"] = Color {
             red = 255,
             green = 255,
             blue = 0,
             alpha = 255
         },
-        ["window_titlebar"] = Color {
+        ["WINDOW_TITLEBAR"] = Color {
             red = 0,
             green = 0,
             blue = 255,
             alpha = 255
         },
-        ["link"] = Color {red = 0, green = 0, blue = 168, alpha = 255},
-        ["text_regular"] = Color {red = 0, green = 255, blue = 255, alpha = 255},
-        ["background"] = Color {red = 120, green = 96, blue = 80, alpha = 255},
-        ["white"] = Color {red = 255, green = 255, blue = 255, alpha = 255},
-        ["black"] = Color {red = 0, green = 0, blue = 0, alpha = 255},
-        ["eye"] = Color {red = 255, green = 0, blue = 129, alpha = 255},
+        ["LINK"] = Color {red = 0, green = 0, blue = 168, alpha = 255},
+        ["TEXT_REGULAR"] = Color {red = 0, green = 255, blue = 255, alpha = 255},
+        ["BACKGROUND"] = Color {red = 120, green = 96, blue = 80, alpha = 255},
+        ["WHITE"] = Color {red = 255, green = 255, blue = 255, alpha = 255},
+        ["BLACK"] = Color {red = 0, green = 0, blue = 0, alpha = 255},
+        ["EYE"] = Color {red = 255, green = 0, blue = 129, alpha = 255},
 
         -- TODO: Add a template color for the input background + mask it in the sheet.png
 
         -- Dark Variants Only
-        ["light_icons"] = Color {red = 0, green = 128, blue = 128, alpha = 255},
+        ["LIGHT_ICONS"] = Color {red = 0, green = 128, blue = 128, alpha = 255},
 
         -- Dark Variants Only
-        ["dark_accent_highlight"] = Color {
+        ["DARK_ACCENT_HIGHLIGHT"] = Color {
             red = 128,
             green = 255,
             blue = 0,
             alpha = 255
         },
-        ["dark_accent_regular"] = Color {
+        ["DARK_ACCENT_REGULAR"] = Color {
             red = 128,
             green = 192,
             blue = 0,
             alpha = 255
         },
-        ["dark_accent_shadow"] = Color {
+        ["DARK_ACCENT_SHADOW"] = Color {
             red = 128,
             green = 128,
             blue = 0,
@@ -184,38 +185,38 @@ local template = {
 local variants = {
     default = {
         colors = {
-            ["button_shadow"] = Color {
+            ["BUTTON_SHADOW"] = Color {
                 red = 128,
                 green = 128,
                 blue = 128,
                 alpha = 255
             },
-            ["button_regular"] = Color {
+            ["BUTTON_REGULAR"] = Color {
                 red = 192,
                 green = 192,
                 blue = 192,
                 alpha = 255
             },
-            ["button_highlight"] = Color {
+            ["BUTTON_HIGHLIGHT"] = Color {
                 red = 255,
                 green = 255,
                 blue = 255,
                 alpha = 255
             },
-            ["window_titlebar"] = Color {
+            ["WINDOW_TITLEBAR"] = Color {
                 red = 0,
                 green = 0,
                 blue = 168,
                 alpha = 255
             },
-            ["link"] = Color {red = 0, green = 0, blue = 168, alpha = 255},
-            ["link_hover"] = Color {
+            ["LINK"] = Color {red = 0, green = 0, blue = 168, alpha = 255},
+            ["LINK_HOVER"] = Color {
                 red = 255,
                 green = 0,
                 blue = 128,
                 alpha = 255
             },
-            ["background"] = Color {
+            ["BACKGROUND"] = Color {
                 red = 128,
                 green = 128,
                 blue = 128,
@@ -225,44 +226,44 @@ local variants = {
     },
     teal = {
         colors = {
-            ["button_shadow"] = Color {
+            ["BUTTON_SHADOW"] = Color {
                 red = 128,
                 green = 128,
                 blue = 128,
                 alpha = 255
             },
-            ["button_regular"] = Color {
+            ["BUTTON_REGULAR"] = Color {
                 red = 192,
                 green = 192,
                 blue = 192,
                 alpha = 255
             },
-            ["button_highlight"] = Color {
+            ["BUTTON_HIGHLIGHT"] = Color {
                 red = 255,
                 green = 255,
                 blue = 255,
                 alpha = 255
             },
-            ["window_titlebar"] = Color {
+            ["WINDOW_TITLEBAR"] = Color {
                 red = 0,
                 green = 128,
                 blue = 128,
                 alpha = 255
             },
-            ["link"] = Color {red = 0, green = 128, blue = 128, alpha = 255},
-            ["link_hover"] = Color {
+            ["LINK"] = Color {red = 0, green = 128, blue = 128, alpha = 255},
+            ["LINK_HOVER"] = Color {
                 red = 255,
                 green = 0,
                 blue = 128,
                 alpha = 255
             },
-            ["background"] = Color {
+            ["BACKGROUND"] = Color {
                 red = 128,
                 green = 128,
                 blue = 128,
                 alpha = 255
             },
-            ["light_icons"] = Color {
+            ["LIGHT_ICONS"] = Color {
                 red = 0,
                 green = 128,
                 blue = 208,
@@ -272,45 +273,45 @@ local variants = {
     },
     desert = {
         colors = {
-            ["button_shadow"] = Color {
+            ["BUTTON_SHADOW"] = Color {
                 red = 160,
                 green = 143,
                 blue = 104,
                 alpha = 255
             },
-            ["button_regular"] = Color {
+            ["BUTTON_REGULAR"] = Color {
                 red = 215,
                 green = 207,
                 blue = 184,
                 alpha = 255
             },
-            ["button_highlight"] = Color {
+            ["BUTTON_HIGHLIGHT"] = Color {
                 red = 232,
                 green = 231,
                 blue = 223,
                 alpha = 255
             },
-            ["window_titlebar"] = Color {
+            ["WINDOW_TITLEBAR"] = Color {
                 red = 0,
                 green = 128,
                 blue = 128,
                 alpha = 255
             },
-            ["link"] = Color {red = 0, green = 128, blue = 128, alpha = 255},
-            ["link_hover"] = Color {
+            ["LINK"] = Color {red = 0, green = 128, blue = 128, alpha = 255},
+            ["LINK_HOVER"] = Color {
                 red = 255,
                 green = 255,
                 blue = 255,
                 alpha = 255
             },
-            ["background"] = Color {
+            ["BACKGROUND"] = Color {
                 red = 160,
                 green = 143,
                 blue = 104,
                 alpha = 255
             },
-            ["eye"] = Color {red = 0, green = 192, blue = 255, alpha = 255},
-            ["light_icons"] = Color {
+            ["EYE"] = Color {red = 0, green = 192, blue = 255, alpha = 255},
+            ["LIGHT_ICONS"] = Color {
                 red = 0,
                 green = 192,
                 blue = 255,
@@ -320,40 +321,40 @@ local variants = {
     },
     spruce = {
         colors = {
-            ["button_shadow"] = Color {
+            ["BUTTON_SHADOW"] = Color {
                 red = 88,
                 green = 151,
                 blue = 103,
                 alpha = 255
             },
-            ["button_regular"] = Color {
+            ["BUTTON_REGULAR"] = Color {
                 red = 160,
                 green = 200,
                 blue = 168,
                 alpha = 255
             },
-            ["button_highlight"] = Color {
+            ["BUTTON_HIGHLIGHT"] = Color {
                 red = 208,
                 green = 224,
                 blue = 208,
                 alpha = 255
             },
-            ["window_titlebar"] = Color {
+            ["WINDOW_TITLEBAR"] = Color {
                 red = 88,
                 green = 151,
                 blue = 103,
                 alpha = 255
             },
-            ["link"] = Color {red = 168, green = 0, blue = 255, alpha = 255},
-            ["link_hover"] = Color {
+            ["LINK"] = Color {red = 168, green = 0, blue = 255, alpha = 255},
+            ["LINK_HOVER"] = Color {
                 red = 255,
                 green = 255,
                 blue = 255,
                 alpha = 255
             },
-            ["background"] = Color {red = 64, green = 0, blue = 64, alpha = 255},
-            ["eye"] = Color {red = 255, green = 96, blue = 192, alpha = 255},
-            ["light_icons"] = Color {
+            ["BACKGROUND"] = Color {red = 64, green = 0, blue = 64, alpha = 255},
+            ["EYE"] = Color {red = 255, green = 96, blue = 192, alpha = 255},
+            ["LIGHT_ICONS"] = Color {
                 red = 255,
                 green = 96,
                 blue = 192,
@@ -363,40 +364,40 @@ local variants = {
     },
     eggplant = {
         colors = {
-            ["button_shadow"] = Color {
+            ["BUTTON_SHADOW"] = Color {
                 red = 88,
                 green = 128,
                 blue = 120,
                 alpha = 255
             },
-            ["button_regular"] = Color {
+            ["BUTTON_REGULAR"] = Color {
                 red = 144,
                 green = 176,
                 blue = 168,
                 alpha = 255
             },
-            ["button_highlight"] = Color {
+            ["BUTTON_HIGHLIGHT"] = Color {
                 red = 200,
                 green = 216,
                 blue = 216,
                 alpha = 255
             },
-            ["window_titlebar"] = Color {
+            ["WINDOW_TITLEBAR"] = Color {
                 red = 168,
                 green = 0,
                 blue = 168,
                 alpha = 255
             },
-            ["link"] = Color {red = 168, green = 0, blue = 168, alpha = 255},
-            ["link_hover"] = Color {
+            ["LINK"] = Color {red = 168, green = 0, blue = 168, alpha = 255},
+            ["LINK_HOVER"] = Color {
                 red = 255,
                 green = 255,
                 blue = 255,
                 alpha = 255
             },
-            ["background"] = Color {red = 64, green = 0, blue = 64, alpha = 255},
-            ["eye"] = Color {red = 255, green = 96, blue = 192, alpha = 255},
-            ["light_icons"] = Color {
+            ["BACKGROUND"] = Color {red = 64, green = 0, blue = 64, alpha = 255},
+            ["EYE"] = Color {red = 255, green = 96, blue = 192, alpha = 255},
+            ["LIGHT_ICONS"] = Color {
                 red = 255,
                 green = 96,
                 blue = 192,
@@ -404,42 +405,42 @@ local variants = {
             }
         }
     },
-    ["slate"] = {
+    slate = {
         colors = {
-            ["button_shadow"] = Color {
+            ["BUTTON_SHADOW"] = Color {
                 red = 87,
                 green = 128,
                 blue = 151,
                 alpha = 255
             },
-            ["button_regular"] = Color {
+            ["BUTTON_REGULAR"] = Color {
                 red = 159,
                 green = 184,
                 blue = 200,
                 alpha = 255
             },
-            ["button_highlight"] = Color {
+            ["BUTTON_HIGHLIGHT"] = Color {
                 red = 207,
                 green = 223,
                 blue = 224,
                 alpha = 255
             },
-            ["window_titlebar"] = Color {
+            ["WINDOW_TITLEBAR"] = Color {
                 red = 87,
                 green = 128,
                 blue = 151,
                 alpha = 255
             },
-            ["link"] = Color {red = 255, green = 224, blue = 0, alpha = 255},
-            ["link_hover"] = Color {
+            ["LINK"] = Color {red = 255, green = 224, blue = 0, alpha = 255},
+            ["LINK_HOVER"] = Color {
                 red = 255,
                 green = 255,
                 blue = 255,
                 alpha = 255
             },
-            ["background"] = Color {red = 0, green = 0, blue = 0, alpha = 255},
-            ["eye"] = Color {red = 255, green = 128, blue = 0, alpha = 255},
-            ["light_icons"] = Color {
+            ["BACKGROUND"] = Color {red = 0, green = 0, blue = 0, alpha = 255},
+            ["EYE"] = Color {red = 255, green = 128, blue = 0, alpha = 255},
+            ["LIGHT_ICONS"] = Color {
                 red = 255,
                 green = 128,
                 blue = 0,
@@ -449,40 +450,40 @@ local variants = {
     },
     ["rainy-day"] = {
         colors = {
-            ["button_shadow"] = Color {
+            ["BUTTON_SHADOW"] = Color {
                 red = 79,
                 green = 103,
                 blue = 127,
                 alpha = 255
             },
-            ["button_regular"] = Color {
+            ["BUTTON_REGULAR"] = Color {
                 red = 128,
                 green = 152,
                 blue = 176,
                 alpha = 255
             },
-            ["button_highlight"] = Color {
+            ["BUTTON_HIGHLIGHT"] = Color {
                 red = 192,
                 green = 207,
                 blue = 216,
                 alpha = 255
             },
-            ["window_titlebar"] = Color {
+            ["WINDOW_TITLEBAR"] = Color {
                 red = 0,
                 green = 0,
                 blue = 0,
                 alpha = 255
             },
-            ["link"] = Color {red = 255, green = 192, blue = 0, alpha = 255},
-            ["link_hover"] = Color {
+            ["LINK"] = Color {red = 255, green = 192, blue = 0, alpha = 255},
+            ["LINK_HOVER"] = Color {
                 red = 255,
                 green = 255,
                 blue = 255,
                 alpha = 255
             },
-            ["background"] = Color {red = 0, green = 0, blue = 0, alpha = 255},
-            ["eye"] = Color {red = 255, green = 128, blue = 0, alpha = 255},
-            ["light_icons"] = Color {
+            ["BACKGROUND"] = Color {red = 0, green = 0, blue = 0, alpha = 255},
+            ["EYE"] = Color {red = 255, green = 128, blue = 0, alpha = 255},
+            ["LIGHT_ICONS"] = Color {
                 red = 255,
                 green = 128,
                 blue = 0,
@@ -492,45 +493,45 @@ local variants = {
     },
     lilac = {
         colors = {
-            ["button_shadow"] = Color {
+            ["BUTTON_SHADOW"] = Color {
                 red = 88,
                 green = 79,
                 blue = 176,
                 alpha = 255
             },
-            ["button_regular"] = Color {
+            ["BUTTON_REGULAR"] = Color {
                 red = 175,
                 green = 168,
                 blue = 216,
                 alpha = 255
             },
-            ["button_highlight"] = Color {
+            ["BUTTON_HIGHLIGHT"] = Color {
                 red = 216,
                 green = 215,
                 blue = 239,
                 alpha = 255
             },
-            ["window_titlebar"] = Color {
+            ["WINDOW_TITLEBAR"] = Color {
                 red = 88,
                 green = 79,
                 blue = 176,
                 alpha = 255
             },
-            ["link"] = Color {red = 168, green = 255, blue = 0, alpha = 255},
-            ["link_hover"] = Color {
+            ["LINK"] = Color {red = 168, green = 255, blue = 0, alpha = 255},
+            ["LINK_HOVER"] = Color {
                 red = 255,
                 green = 255,
                 blue = 255,
                 alpha = 255
             },
-            ["background"] = Color {
+            ["BACKGROUND"] = Color {
                 red = 128,
                 green = 128,
                 blue = 128,
                 alpha = 255
             },
-            ["eye"] = Color {red = 80, green = 224, blue = 0, alpha = 255},
-            ["light_icons"] = Color {
+            ["EYE"] = Color {red = 80, green = 224, blue = 0, alpha = 255},
+            ["LIGHT_ICONS"] = Color {
                 red = 80,
                 green = 224,
                 blue = 0,
@@ -540,45 +541,45 @@ local variants = {
     },
     rose = {
         colors = {
-            ["button_shadow"] = Color {
+            ["BUTTON_SHADOW"] = Color {
                 red = 159,
                 green = 96,
                 blue = 112,
                 alpha = 255
             },
-            ["button_regular"] = Color {
+            ["BUTTON_REGULAR"] = Color {
                 red = 207,
                 green = 175,
                 blue = 183,
                 alpha = 255
             },
-            ["button_highlight"] = Color {
+            ["BUTTON_HIGHLIGHT"] = Color {
                 red = 231,
                 green = 216,
                 blue = 223,
                 alpha = 255
             },
-            ["window_titlebar"] = Color {
+            ["WINDOW_TITLEBAR"] = Color {
                 red = 159,
                 green = 96,
                 blue = 112,
                 alpha = 255
             },
-            ["link"] = Color {red = 160, green = 240, blue = 224, alpha = 255},
-            ["link_hover"] = Color {
+            ["LINK"] = Color {red = 160, green = 240, blue = 224, alpha = 255},
+            ["LINK_HOVER"] = Color {
                 red = 255,
                 green = 255,
                 blue = 255,
                 alpha = 255
             },
-            ["background"] = Color {
+            ["BACKGROUND"] = Color {
                 red = 128,
                 green = 128,
                 blue = 128,
                 alpha = 255
             },
-            ["eye"] = Color {red = 48, green = 224, blue = 255, alpha = 255},
-            ["light_icons"] = Color {
+            ["EYE"] = Color {red = 48, green = 224, blue = 255, alpha = 255},
+            ["LIGHT_ICONS"] = Color {
                 red = 48,
                 green = 224,
                 blue = 255,
@@ -598,69 +599,69 @@ end
 local darkVariants = {
     midnight = {
         colors = {
-            ["button_shadow"] = Color {
+            ["BUTTON_SHADOW"] = Color {
                 red = 37,
                 green = 37,
                 blue = 37,
                 alpha = 255
             },
-            ["button_regular"] = Color {
+            ["BUTTON_REGULAR"] = Color {
                 red = 59,
                 green = 59,
                 blue = 59,
                 alpha = 255
             },
-            ["button_highlight"] = Color {
+            ["BUTTON_HIGHLIGHT"] = Color {
                 red = 88,
                 green = 88,
                 blue = 88,
                 alpha = 255
             },
-            ["window_titlebar"] = Color {
+            ["WINDOW_TITLEBAR"] = Color {
                 red = 0,
                 green = 0,
                 blue = 0,
                 alpha = 255
             },
-            ["link"] = Color {red = 43, green = 123, blue = 244, alpha = 255},
-            ["link_hover"] = Color {
+            ["LINK"] = Color {red = 43, green = 123, blue = 244, alpha = 255},
+            ["LINK_HOVER"] = Color {
                 red = 255,
                 green = 255,
                 blue = 255,
                 alpha = 255
             },
-            ["text_regular"] = Color {
+            ["TEXT_REGULAR"] = Color {
                 red = 128,
                 green = 128,
                 blue = 128,
                 alpha = 255
             },
-            ["text_hover"] = Color {
+            ["TEXT_HOVER"] = Color {
                 red = 255,
                 green = 255,
                 blue = 255,
                 alpha = 255
             },
-            ["input_background"] = Color {
+            ["INPUT_BACKGROUND"] = Color {
                 red = 0,
                 green = 0,
                 blue = 0,
                 alpha = 255
             },
-            ["background"] = Color {red = 37, green = 37, blue = 37, alpha = 37},
-            ["dark_accent_highlight"] = Color {
+            ["BACKGROUND"] = Color {red = 37, green = 37, blue = 37, alpha = 37},
+            ["DARK_ACCENT_HIGHLIGHT"] = Color {
                 red = 43,
                 green = 123,
                 blue = 244,
                 alpha = 255
             },
-            ["dark_accent_regular"] = Color {
+            ["DARK_ACCENT_REGULAR"] = Color {
                 red = 21,
                 green = 61,
                 blue = 122,
                 alpha = 255
             },
-            ["dark_accent_shadow"] = Color {
+            ["DARK_ACCENT_SHADOW"] = Color {
                 red = 37,
                 green = 37,
                 blue = 37,
@@ -670,82 +671,82 @@ local darkVariants = {
     },
     gruvbox = {
         colors = {
-            ["button_shadow"] = Color {
+            ["BUTTON_SHADOW"] = Color {
                 red = 40,
                 green = 40,
                 blue = 40,
                 alpha = 255
             },
-            ["button_regular"] = Color {
+            ["BUTTON_REGULAR"] = Color {
                 red = 60,
                 green = 56,
                 blue = 54,
                 alpha = 255
             },
-            ["button_highlight"] = Color {
+            ["BUTTON_HIGHLIGHT"] = Color {
                 red = 80,
                 green = 73,
                 blue = 69,
                 alpha = 255
             },
-            ["window_titlebar"] = Color {
+            ["WINDOW_TITLEBAR"] = Color {
                 red = 214,
                 green = 93,
                 blue = 14,
                 alpha = 255
             },
-            ["link"] = Color {red = 69, green = 133, blue = 136, alpha = 255},
-            ["link_hover"] = Color {
+            ["LINK"] = Color {red = 69, green = 133, blue = 136, alpha = 255},
+            ["LINK_HOVER"] = Color {
                 red = 131,
                 green = 165,
                 blue = 152,
                 alpha = 255
             },
-            ["text_regular"] = Color {
+            ["TEXT_REGULAR"] = Color {
                 red = 168,
                 green = 153,
                 blue = 132,
                 alpha = 255
             },
-            ["text_hover"] = Color {
+            ["TEXT_HOVER"] = Color {
                 red = 235,
                 green = 219,
                 blue = 178,
                 alpha = 255
             },
-            ["input_background"] = Color {
+            ["INPUT_BACKGROUND"] = Color {
                 red = 29,
                 green = 32,
                 blue = 33,
                 alpha = 255
             },
-            ["background"] = Color {
+            ["BACKGROUND"] = Color {
                 red = 29,
                 green = 32,
                 blue = 33,
                 alpha = 255
             },
-            ["dark_accent_highlight"] = Color {
+            ["DARK_ACCENT_HIGHLIGHT"] = Color {
                 red = 69,
                 green = 133,
                 blue = 136,
                 alpha = 255
             },
-            ["dark_accent_regular"] = Color {
+            ["DARK_ACCENT_REGULAR"] = Color {
                 red = 7,
                 green = 102,
                 blue = 120,
                 alpha = 255
             },
-            ["dark_accent_shadow"] = Color {
+            ["DARK_ACCENT_SHADOW"] = Color {
                 red = 80,
                 green = 73,
                 blue = 69,
                 alpha = 255
             },
-            ["white"] = Color {red = 235, green = 219, blue = 178, alpha = 255},
-            ["black"] = Color {red = 29, green = 32, blue = 33, alpha = 255},
-            ["eye"] = Color {red = 69, green = 133, blue = 136, alpha = 255}
+            ["WHITE"] = Color {red = 235, green = 219, blue = 178, alpha = 255},
+            ["BLACK"] = Color {red = 29, green = 32, blue = 33, alpha = 255},
+            ["EYE"] = Color {red = 69, green = 133, blue = 136, alpha = 255}
         }
     }
 }
