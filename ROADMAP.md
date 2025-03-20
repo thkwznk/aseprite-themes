@@ -10,4 +10,5 @@ Unreleased:
 
 Unreleased:
 
-- Add new theme elements to make it compatible with Aseprite v1.3.14-beta1
+- [Improvement] Add new theme elements to make it compatible with Aseprite v1.3.14-beta1
+- [Fix] Add a shadow under the line connecting linked cels
