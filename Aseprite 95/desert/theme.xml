@@ -613,8 +613,9 @@
             <background-border part="button_selected" state="selected"/>
             <background-border part="button_normal" state="mouse disabled"/>
             <text color="button_normal_text"/>
-            <text color="button_hot_text" state="mouse"/>
-            <text color="button_selected_text" state="selected"/>
+            <text color="button_hot_text" y="1" state="mouse"/>
+            <text color="button_selected_text" y="1" state="selected"/>
+            <text color="button_selected_text" state="mouse focus"/>
             <text color="background" x="1" y="1" state="disabled"/>
             <newlayer/>
             <text color="disabled" state="disabled"/>
@@ -725,6 +726,7 @@
             <text color="button_normal_text"/>
             <text color="button_hot_text" y="1" state="mouse"/>
             <text color="button_selected_text" y="1" state="selected"/>
+            <text color="button_selected_text" y="1" state="focus"/>
         </style>
         <style id="color_button" extends="mini_button" font="mini" padding-bottom="1"/>
         <style id="splitter">
@@ -1110,6 +1112,7 @@
             <text color="button_normal_text"/>
             <text color="button_hot_text" y="1" state="selected"/>
             <text color="button_hot_text" y="1" state="mouse"/>
+            <text color="button_hot_text" y="1" state="focus"/>
             <text color="button_selected_text" y="1" state="mouse capture"/>
             <text color="button_selected_text" y="1" state="capture selected"/>
             <text color="background" x="1" y="1" state="disabled"/>
@@ -1120,6 +1123,7 @@
             <text color="button_normal_text" align="top"/>
             <text color="button_hot_text" y="1" state="selected" align="top"/>
             <text color="button_hot_text" y="1" state="mouse" align="top"/>
+            <text color="button_hot_text" y="1" state="focus" align="top"/>
             <text color="button_selected_text" y="1" state="mouse capture" align="top"/>
             <text color="button_selected_text" y="1" state="capture selected" align="top"/>
             <text color="background" x="1" y="1" state="disabled" align="top"/>
