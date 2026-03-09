@@ -216,7 +216,7 @@
         <part id="tab_normal" x="3" y="168" w1="6" w2="8" w3="7" h1="6" h2="9" h3="3"/>
         <part id="tab_active" x="24" y="168" w1="6" w2="11" w3="7" h1="6" h2="9" h3="3"/>
         <part id="tab_bottom_active" x="24" y="186" w1="6" w2="10" w3="8" h1="3" h2="1" h3="3"/>
-        <part id="tab_bottom_normal" x="3" y="186" w="18" h="7"/>
+        <part id="tab_bottom_normal" x="3" y="186" w1="1" w2="16" w3="1" h1="3" h2="3" h3="1"/>
         <part id="tab_filler" x="0" y="168" w="3" h="18"/>
         <part id="tab_modified_icon_normal" x="48" y="168" w="7" h="7"/>
         <part id="tab_modified_icon_active" x="48" y="176" w="7" h="7"/>

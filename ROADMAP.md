@@ -4,7 +4,7 @@
 
 Unreleased:
 
-- 
+- [Fix] Correctly scale inactive tab elements for smaller fonts
 
 ## Aseprite 95
 
